@@ -67,11 +67,12 @@ a:visited {
 }
 
 a:hover {
-  color: HighlightText;
+  color: CanvasText;
+  background-color: color-mix(in srgb, Canvas, LinkText 10%);
 }
 
 a:active {
-  color: SelectedItemText;
+  color: CanvasText;
 }
 
 a:focus {
