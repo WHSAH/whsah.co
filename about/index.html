@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>About</title>
-  <style>
+<title>About</title>
+<style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -21,32 +21,48 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
+</style>
   <link rel="stylesheet" href="/css/index.css" />
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/latin-modern-sans" />
 </head>
 <body>
-<div class="sidebar">
-	<h4>Contents</h4>
-	<a href="/">Home</a>
-	<a href="/about">About</a>
-	<div><b>Posts</b>
-		<a href="/posts/dht-progesterone-pathway">DHT, Progesterone, and the Myth of the Backdoor Pathway</a>
-	</div>
-</div>
-<header id="title-block-header">
-<h1 class="title">About</h1>
-</header>
-<p><strong>WHSAH</strong> is an alternative research outlet for research
-performed for and by trans people. This includes research on
-gender-affirming hormone therapy as well as any other research
-pertaining to trans people’s needs in transition.</p>
-<h3 id="contact">Contact</h3>
-<p>You may reach us by sending an email to &lt;&gt;.</p>
-<p>(Note: this site is currently under construction)</p>
-<h3 id="funding-notice">Funding notice</h3>
-<p><strong>WHSAH</strong> receives no external funding, contributions or
-donations. If you’d like to contribute financially, feel free to reach
-out via email.</p>
+<div id="grid-area">
+            <div id="navigation-container">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <details id="navigation-menu">
+                    <summary><b>Posts</b></summary>
+                    <nav>
+                    <ul>
+                        <li><a href="/posts/rethinking-progesterone">Rethinking Progesterone and Androgens</a></li>
+                    </ul>
+                    </nav>
+                </details>
+            </div>
+            <script>
+                const navigationMenu = document.getElementById('navigation-menu');
+                document.addEventListener('mousedown', (e) => {
+                    const isClickOnSummary = e.target.closest('summary') !== null;
+                    if (navigationMenu?.open && !isClickOnSummary && !navigationMenu.contains(e.target)) {
+                        navigationMenu.open = false;
+                    }
+                });
+            </script>
+        <div id="render-area">
+                    <header id="title-block-header">
+                <h1 class="title">About</h1>
+                                                                            </header>
+                        <h3 id="contact">Contact</h3>
+                        <p>You may reach us by sending an email to
+                        &lt;&gt;.</p>
+                        <h3 id="whsah">WHSAH?</h3>
+                        <p>Yes, pronounced /ˈväˌsä/ or /ˈwäˌsä/.</p>
+                        <h3 id="funding-notice">Funding notice</h3>
+                        <p><strong>WHSAH</strong> receives no external
+                        funding, contributions or donations. If you’d
+                        like to contribute financially, feel free to
+                        reach out via email.</p>
+    </div>
+    </div>
 </body>
 </html>

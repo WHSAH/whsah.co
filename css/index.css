@@ -1,267 +1,365 @@
-/*
- * I add this to html files generated with pandoc.
- */
-
-.sidebar {
-  height: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  background-color: color-mix(in srgb, Canvas, CanvasText 10%);
-  overflow-x: hidden;
-  font-size: 12px;
+:root {
+    --background-interact-color: color-mix(in srgb, Canvas, LinkText 10%);
 }
-
-.sidebar a {
-  display: block;
-}
-
-.sidebar div {
-  margin-top: 1em;
-}
-
-.sidebar div a {
-  margin-left: 1em;
-}
-
 
 html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  background: color-mix(in srgb, Canvas, CanvasText 10%);
-  color-scheme: light dark;
+    color: color-mix(in srgb, Canvas, CanvasText 75%);
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    color-scheme: light dark;
 }
 
 body {
-  color: CanvasText;
-  font-family: 'LMSans10', sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  padding: 1em;
-  margin: auto;
-  max-width: 42em;
-  background: Canvas;
+    font-family: 'LMSans10', sans-serif;
+    line-height: 1.7;
+    background: Canvas;
 }
 
-.sidebar {
-  width: 110px;
-  margin-left: -140px;
-  padding: 10px;
+#grid-area {
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto minmax(auto, 60rem) auto;
+    grid-template-rows: auto auto;
+    row-gap: 2rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      ". text .";
 }
 
-body {
-  padding-left: 140px;
+#render-area {
+    grid-area: text;
 }
 
+#navigation-container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: Canvas;
+    grid-area: navbar;
+    align-items: baseline;
+    color: color-mix(in srgb, Canvas, CanvasText 85%);
+    width: 100%;
+    z-index: 1000;
+    gap: 1rem;
+}
+
+#navigation-menu {
+    display: inline-block;
+    user-select: none;
+    list-style: none;
+    list-style-type: none;
+    -webkit-list-style: none;
+}
+
+#navigation-menu>summary {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#navigation-menu>summary:hover {
+    text-decoration: underline;
+}
+
+#navigation-menu>summary::-webkit-details-marker {
+    display: none;
+}
+
+#navigation-menu nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: Canvas;
+    border: 1px solid CanvasText;
+    padding: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 1rem;
+
+    max-width: 95vw;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+#navigation-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#navigation-menu li {
+    white-space: normal;
+    word-break: break-word;
+}
+
+#navigation-menu ul:last-child {
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    html {
+        scroll-padding-top: 5rem;
+    }
+
+    body {
+        font-size: 1.3rem;
+        padding-top: 7rem;
+    }
+
+    #navigation-container {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+
+    #navigation-menu>nav {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    html {
+        scroll-padding-top: 4rem;
+    }
+
+    body {
+        font-size: 1rem;
+        padding-top: 3rem;
+    }
+
+    #navigation-container {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #navigation-menu>nav {
+        font-size: 1rem;
+    }
+
+}
 
 a {
-  color: LinkText;
-  text-decoration: none;
-  font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
+    color: LinkText;
+    /* make sure the hover background stays
+     on when cursor is between two lines */
+    padding: 0.2rem 0;
+}
+
+#navigation-container a {
+    color: color-mix(in srgb, Canvas, CanvasText 85%);
 }
 
 a:visited {
-  color: VisitedText;
+    color: LinkText;
+}
+
+#navigation-container a:visited {
+    color: color-mix(in srgb, Canvas, CanvasText 85%);
 }
 
 a:hover {
-  color: CanvasText;
-  background-color: color-mix(in srgb, Canvas, LinkText 10%);
+    text-decoration: underline;
 }
 
 a:active {
-  color: CanvasText;
+    color: CanvasText;
 }
 
 a:focus {
-  outline: thin dotted;
+    outline: thin dotted;
 }
 
 *::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: CanvasText;
+    background-color: var(--background-interact-color);
+    color: CanvasText;
 }
 
 *::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: CanvasText;
+    background-color: var(--background-interact-color);
+    color: CanvasText;
 }
 
 a::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: LinkText;
+    background-color: var(--background-interact-color);
+    color: CanvasText;
 }
 
 a::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: LinkText;
+    background-color: var(--background-interact-color);
+    color: CanvasText;
 }
 
 p {
-  margin: 1em 0;
+    margin: 1rem 0;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: CanvasText;
-  line-height: 125%;
-  margin-top: 2em;
-  font-weight: normal;
+@media (prefers-color-scheme: dark) {
+    img {
+        filter:
+            invert(1)
+            hue-rotate(180deg)
+            brightness(1.3);
+        mix-blend-mode: lighten;
+    }
 }
 
-h4, h5, h6 {
-  font-weight: bold;
+@media (prefers-color-scheme: light) {
+    img {
+        mix-blend-mode: multiply;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: color-mix(in srgb, Canvas, CanvasText 90%);
+    line-height: 125%;
+    margin-top: 2rem;
+    font-weight: normal;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: bold;
 }
 
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2em;
+    font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 h5 {
-  font-size: 1em;
+    font-size: 1rem;
 }
 
 h6 {
-  font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 blockquote {
-  color: #999;
-  margin: 0;
-  padding-left: 3em;
-  border-left: 0.5em #1a1726 solid;
+    color: #999;
+    margin: 0;
+    padding-left: 3rem;
+    border-left: 0.5rem #1a1726 solid;
 }
 
 hr {
-  display: block;
-  height: 2px;
-  border: 0;
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #1a1726;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #1a1726;
+    margin: 1rem 0;
+    padding: 0;
 }
 
-pre, code, kbd, samp {
-  color: CanvasText;
-  font-family: monospace;
-  font-size: 0.8em;
+pre,
+code,
+kbd,
+samp {
+    color: CanvasText;
+    font-family: monospace;
+    font-size: 0.8rem;
 }
 
 pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
-b, strong {
-  font-weight: bold;
+b,
+strong {
+    font-weight: bold;
 }
 
-dfn {
-  font-style: italic;
-}
-
-ins {
-  background: #261;
-  color: #fff;
-  text-decoration: none;
-}
-
-mark {
-  background: #661;
-  color: #fff;
-  font-style: italic;
-  font-weight: bold;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sup {
-  top: -0.5em;
+    top: -0.5rem;
 }
 
 sub {
-  bottom: -0.25em;
-}
-
-ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 2em;
-}
-
-li p:last-child {
-  margin-bottom: 0;
-}
-
-ul ul, ol ol {
-  margin: .3em 0;
+    bottom: -0.25rem;
 }
 
 dl {
-  margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 dt {
-  font-weight: bold;
-  margin-bottom: .8em;
+    font-weight: bold;
+    margin-bottom: .8rem;
 }
 
 dd {
-  margin: 0 0 .8em 2em;
+    margin: 0 0 .8rem 2rem;
 }
 
 dd:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
 }
 
 figure {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 figure img {
-  border: none;
-  margin: 0 auto;
+    border: none;
+    margin: 0 auto;
 }
 
 figcaption {
-  font-size: 0.8em;
-  font-style: italic;
-  margin: 0 0 .8em;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0 0 .8rem;
 }
 
+/* TODO: Use system colors + color-mix */
 table {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #222;
   border-right: 1px solid #222;
   border-spacing: 0;
@@ -269,114 +367,111 @@ table {
 }
 
 table th {
-  padding: .2em 1em;
+  padding: .2rem 1rem;
   background-color: #1a1726;
   border-top: 1px solid #222;
   border-left: 1px solid #222;
 }
 
 table td {
-  padding: .2em 1em;
+  padding: .2rem 1rem;
   border-top: 1px solid #222;
   border-left: 1px solid #222;
   vertical-align: top;
 }
 
 .author {
-  font-size: 1.2em;
-  text-align: center;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-@media only screen and (min-width: 480px) {
-  body {
-    font-size: 16px;
-    padding-left: 200px;
-  }
 
-  .sidebar {
-    font-size: 16px;
-    width: 170px;
-    margin-left: -200px;
-    padding: 10px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 20px;
-    padding-left: 300px;
-  }
-
-  .sidebar {
-    font-size: 20px;
-    width: 230px;
-    margin-left: -300px;
-    padding: 20px;
-  }
-}
 @media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
 
-  body {
-    padding-left: 1em;
-    font-size: 12pt;
-    max-width: 100%;
-  }
+    * {
+        background: transparent !important;
+        color: black !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    }
 
-  a, a:visited {
-    text-decoration: underline;
-  }
+    body {
+        font-size: 12pt;
+        max-width: 100%;
+    }
 
-  hr {
-    height: 1px;
-    border: 0;
-    border-bottom: 1px solid black;
-  }
+    #grid-area {
+        all: unset;
+    }
+    
+    #render-area {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    a,
+    a:visited {
+        text-decoration: none;
+    }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    hr {
+        height: 1px;
+        border: 0;
+        border-bottom: 1px solid black;
+    }
 
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
-  }
+    #navigation-container * {
+        display: none !important;
+        visibility: hidden !important;
+    }
 
-  pre, blockquote {
-    border: 1px solid #999;
-    padding-right: 1em;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        padding-right: 1rem;
+        page-break-inside: avoid;
+    }
 
-  tr, img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-  img {
-    max-width: 100% !important;
-  }
+    img {
+        max-width: 100% !important;
+    }
 
-  @page :left {
-    margin: 15mm 20mm 15mm 10mm;
-}
+    @page {
+        margin-top: 25mm;
+        margin-right: 20mm;
+        margin-bottom: 25mm;
+        margin-left: 20mm;
+    }
 
-  @page :right {
-    margin: 15mm 10mm 15mm 20mm;
-}
+    @page :left {
+        margin-top: 25mm;
+        margin-right: 20mm;
+        margin-bottom: 25mm;
+        margin-left: 10mm;
+    }
 
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    @page :right {
+        margin-top: 25mm;
+        margin-right: 10mm;
+        margin-bottom: 25mm;
+        margin-left: 20mm;
+    }
 
-  h2, h3 {
-    page-break-after: avoid;
-  }
+    p, h1, h2, h3, h4 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        page-break-after: avoid !important;
+    }
 }
