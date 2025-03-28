@@ -9,34 +9,46 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     color-scheme: light dark;
+    scroll-padding-top: 5rem;
 }
 
 body {
     font-family: 'LMSans10', sans-serif;
     line-height: 1.7;
     background: Canvas;
+    margin: 0;
+    font-size: 1.3rem;
+    padding-top: 7rem;
 }
 
-#grid-area {
+.box {
+    margin-top: 2rem;
+    padding: 0.2rem 1rem;
+    background: color-mix(in srgb, Canvas, CanvasText 5%);
+}
+.box h2 {
+    margin-top: 1rem;
+}
+
+.grid-area {
     margin: auto;
     display: grid;
-    grid-template-columns: auto minmax(auto, 60rem) auto;
+    grid-template-columns: auto minmax(auto, 52rem) auto;
     grid-template-rows: auto auto;
     grid-auto-flow: row;
     grid-template-areas:
-      "navbar navbar navbar"
-      ". text .";
+      ". content .";
 }
 
-#render-area {
-    grid-area: text;
+.render-area {
+    grid-area: content;
+    padding: 0 0.5rem;
 }
 
 #navigation-container {
     position: fixed;
     top: 0;
     left: 0;
-    padding-left: 2rem;
     display: flex;
     background-color: Canvas;
     grid-area: navbar;
@@ -47,6 +59,8 @@ body {
     gap: 1rem;
     border-style: none none solid none;
     border-width: 0 0 1px 0;
+    font-size: 1.5rem;
+    padding-top: 2rem;
 }
 
 #navigation-menu {
@@ -73,17 +87,16 @@ body {
 #navigation-menu nav {
     position: absolute;
     top: 100%;
-    left: 0;
     background: Canvas;
     border: 1px solid CanvasText;
     padding: 0.5rem;
     padding-left: 0rem;
     padding-right: 1rem;
+    font-size: 1.3rem;
 
-    max-width: 95vw;
+    max-width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
-
 }
 
 #navigation-menu ul {
@@ -102,33 +115,10 @@ body {
     padding-left: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
-
-    html {
-        scroll-padding-top: 5rem;
-    }
-
-    body {
-        font-size: 1.3rem;
-        padding-top: 7rem;
-    }
-
-    #navigation-container {
-        padding-top: 2rem;
-        font-size: 1.5rem;
-    }
-
-
-    #navigation-menu>nav {
-        font-size: 1.3rem;
-    }
-
-}
-
-@media only screen and (max-width: 767px) {
-
+@media only screen and (width <= 52rem) {
     html {
         scroll-padding-top: 4rem;
+	width: 100%;
     }
 
     body {
@@ -143,8 +133,8 @@ body {
 
     #navigation-menu>nav {
         font-size: 1rem;
+	left: 0;
     }
-
 }
 
 a {
@@ -408,11 +398,15 @@ table td {
         max-width: 100%;
     }
 
-    #grid-area {
+    .box {
+	border: 1px solid #999;
+    }
+
+    .grid-area {
         all: unset;
     }
     
-    #render-area {
+    .render-area {
         width: 100% !important;
         max-width: 100% !important;
     }
@@ -430,8 +424,6 @@ table td {
 
     #navigation-container {
         display: none !important;
-        visibility: hidden !important;
-        border: none !important;
     }
 
     pre,
