@@ -30,6 +30,23 @@ body {
     margin-top: 1rem;
 }
 
+.citation-tooltip {
+    position: absolute;
+    background-color: color-mix(in srgb, Canvas, CanvasText 5%);
+    border: 1px solid black;
+    padding: 0 0.5em 0.2em 0.5em;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 35em;
+    max-width: calc(100% - 1em - 1em); // 1em for own padding, 1em for padding of content
+    font-size: 0.8em;
+}
+
+.references {
+    padding-bottom: 1em;
+}
+
 .grid-area {
     margin: auto;
     display: grid;
@@ -409,6 +426,10 @@ table td {
     .render-area {
         width: 100% !important;
         max-width: 100% !important;
+    }
+
+    .citation-backlinks, .citation-tooltip {
+	display: none !important;
     }
 
     a,
