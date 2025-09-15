@@ -27,7 +27,7 @@ for (let entry of document.getElementsByClassName("csl-entry")) {
     const backlinks = document.createElement("sup");
     backlinks.className = 'citation-backlinks';
     backlinks.textContent = "^ ";
-    
+
     let i = 1;
     for (let cit of citations) {
 	let backlink = alphabetize(i);
@@ -50,7 +50,7 @@ for (let entry of document.getElementsByClassName("csl-entry")) {
         tooltip.innerHTML = entry.innerHTML;
 	tooltip.className = 'citation-tooltip';
 	wrapper.appendChild(tooltip);
-   
+
         wrapper.addEventListener('mouseenter', () => {
 	    // Position the tooltip underneath the citation link, but further left if necessary
             const contentPadding = parseFloat(window.getComputedStyle(document.getElementsByClassName("render-area")[0]).paddingRight, 10);
@@ -63,12 +63,12 @@ for (let entry of document.getElementsByClassName("csl-entry")) {
 	    tooltip.style.left = `${position}px`;
             tooltip.style.display = 'block';
         });
-  
+
         wrapper.addEventListener('mouseleave', () => {
             tooltip.style.display = 'none';
         });
 
 	i++;
     }
-    entry.children[1].prepend(backlinks, " ");
+    entry.prepend(backlinks, " ");
 }
