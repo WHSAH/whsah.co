@@ -51,33 +51,32 @@
 </head>
 <body>
 <div id="navigation-container">
-    <div class="grid-area">
-        <div class="render-area">
-	    		<a href="/">Home</a>
-    <a href="/about">About</a>
-    <details id="navigation-menu">
-        <summary><b>Posts</b></summary>
-        <nav>
-        <ul>
-            <li><a href="/posts/rethinking-progesterone-and-androgens">Rethinking Progesterone and Androgens</a></li>
-            <li><a href="/posts/english-translation-of-a-method-for-preparing-estradiol">English Translation of "A Method for Preparing Estradiol"</a></li>
-        </ul>
-        </nav>
-    </details>
-    <script>
-        const navigationMenu = document.getElementById('navigation-menu');
-        document.addEventListener('mousedown', (e) => {
-            const isClickOnSummary = e.target.closest('summary') !== null;
-            if (navigationMenu?.open && !isClickOnSummary && !navigationMenu.contains(e.target)) {
-                navigationMenu.open = false;
-            }
-        });
-    </script>
-	    	</div>
+    <div id="navigation-options">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <details id="navigation-menu">
+            <summary><b>Posts</b></summary>
+            <nav>
+                <ul>
+                    <li><a href="/posts/pcos-transmascs-and-testosterone">PCOS, transmascs & testosterone</a></li>
+                    <li><a href="/posts/rethinking-progesterone-and-androgens">Rethinking Progesterone and Androgens</a></li>
+                    <li><a href="/posts/english-translation-of-a-method-for-preparing-estradiol">English Translation of "A Method for Preparing Estradiol"</a></li>
+                </ul>
+            </nav>
+        </details>
     </div>
 </div>
+<script>
+    const navigationMenu = document.getElementById('navigation-menu');
+    document.addEventListener('mousedown', (e) => {
+        const isClickOnSummary = e.target.closest('summary') !== null;
+        if (navigationMenu?.open && !isClickOnSummary && !navigationMenu.contains(e.target)) {
+            navigationMenu.open = false;
+        }
+    });
+</script>
 <div class="grid-area">
-    <div class="render-area">
+    <div class="content-area">
         <header id="title-block-header">
                         <h1 class="title">Rethinking Progesterone and
 Androgens</h1>
@@ -419,8 +418,8 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 class="header-section-number">2</span> DHT Crash Course:
                 Intracrinology and Modern Theory</h2>
                 <p>For an excellent and in-depth review of modern
-                intracrine androgen biosynthesis theory, see Schiffer
-                <em>et al.</em> <span class="citation"
+                intracrine androgen biosynthesis theory, see
+                Schiffer et al. <span class="citation"
                 data-cites="schiffer_intracrine_2018">(<a
                 href="#ref-schiffer_intracrine_2018"
                 role="doc-biblioref">2018</a>)</span>.</p>
@@ -616,11 +615,10 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 the absence of any disorder or disease.</p>
                 <p><a id="Figure2"></a> <img
                 src="BassettA2005_fig4-5.png"
-                alt="Figure 2: Interindividual variation of enzymatic expression levels (Bassett et al. 2005)" />
+                alt="Figure 2: Interindividual variation of enzymatic expression levels (Bassett et al., 2005)" />
                 <strong>Figure 2.</strong> Interindividual variation in
                 enzymatic expression levels of key steroidogenic enzymes
-                (data taken from Bassett <em>et al.</em> <span
-                class="citation"
+                (data taken from Bassett et al. <span class="citation"
                 data-cites="bassett_expression_2005">(<a
                 href="#ref-bassett_expression_2005"
                 role="doc-biblioref">2005</a>)</span>). Enzymes include
@@ -638,8 +636,8 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 adrenal precursor DHEA into A4, and of A5 into T.</p>
                 <p><a id="Table1"></a> <img src="HoppeA2006_table3.png"
                 alt="Table 1: Interindividual variation of enzymatic expression levels (Hoppe et al., 2006)" />
-                <strong>Table 1.</strong> Table from Hoppe <em>et
-                al.</em> <span class="citation"
+                <strong>Table 1.</strong> Table from Hoppe et al. <span
+                class="citation"
                 data-cites="hoppe_tissuespecific_2006">(<a
                 href="#ref-hoppe_tissuespecific_2006"
                 role="doc-biblioref">2006</a>)</span> showing
@@ -700,16 +698,16 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 role="doc-biblioref">Kanehisa et al., 2025</a>; <a
                 href="#ref-kanehisa_kegg_2000"
                 role="doc-biblioref">Kanehisa &amp; Goto,
-                2000</a>)</span>, discussions from Labrie <em>et
-                al.</em> <span class="citation"
+                2000</a>)</span>, discussions from Labrie et al. <span
+                class="citation"
                 data-cites="labrie_dehydroepiandrosterone_2005">(<a
                 href="#ref-labrie_dehydroepiandrosterone_2005"
                 role="doc-biblioref">2005</a>)</span>, and graphical
-                elements from Fukami <em>et al.</em> <span
-                class="citation" data-cites="fukami_backdoor_2013">(<a
+                elements from Fukami et al. <span class="citation"
+                data-cites="fukami_backdoor_2013">(<a
                 href="#ref-fukami_backdoor_2013"
-                role="doc-biblioref">2013</a>)</span> and Fiandalo
-                <em>et al.</em> <span class="citation"
+                role="doc-biblioref">2013</a>)</span> and
+                Fiandalo et al. <span class="citation"
                 data-cites="fiandalo_potential_2019">(<a
                 href="#ref-fiandalo_potential_2019"
                 role="doc-biblioref">2019</a>)</span>.</p>
@@ -905,8 +903,8 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 another and can lead to symptoms of
                 hyperandrogenism.</p>
                 <p>For an excellent and in-depth review of congenital
-                adrenal hyperplasia, please refer Claahsen <em>et
-                al.</em> <span class="citation"
+                adrenal hyperplasia, please refer Claahsen et al. <span
+                class="citation"
                 data-cites="claahsen_congenital_2021">(<a
                 href="#ref-claahsen_congenital_2021"
                 role="doc-biblioref">2021</a>)</span>.</p>
@@ -1049,8 +1047,8 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 compared to controls. Notice that outside of newborns,
                 absolute levels show a substantial overlap with those
                 seen in controls when looked at in isolation. Figured
-                reproduced from Kamrath <em>et al.</em> <span
-                class="citation" data-cites="kamrath_increased_2012">(<a
+                reproduced from Kamrath et al. <span class="citation"
+                data-cites="kamrath_increased_2012">(<a
                 href="#ref-kamrath_increased_2012"
                 role="doc-biblioref">2012</a>)</span>.</p>
                 <p>The lack of definitive phenotypic features in ncCAH
@@ -1095,8 +1093,7 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 5α-reductase).</p>
                 <p>In term of specific diagnostic criteria</p>
                 <ul>
-                <li><p>Costa-Barbosa <em>et al.</em> <span
-                class="citation"
+                <li><p>Costa-Barbosa et al. <span class="citation"
                 data-cites="costa-barbosa_superior_2010">(<a
                 href="#ref-costa-barbosa_superior_2010"
                 role="doc-biblioref">2010</a>)</span> found that in
@@ -1111,7 +1108,7 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 17OH-P)/cortisol &gt; 46: 87% sensitivity, 100%
                 specificity.</li>
                 </ol></li>
-                <li><p>Turcu <em>et al.</em> <span class="citation"
+                <li><p>Turcu et al. <span class="citation"
                 data-cites="turcu_androgen_2020">(<a
                 href="#ref-turcu_androgen_2020"
                 role="doc-biblioref">2020</a>)</span> using LC-MS/MS
@@ -1127,7 +1124,7 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 11K-T) and their ratios 11K-T/T (1.8 vs 0.6) and
                 11OH-A4/A4 (2.6 vs 1.2).</li>
                 </ol></li>
-                <li><p>Oriolo <em>et al.</em> <span class="citation"
+                <li><p>Oriolo et al. <span class="citation"
                 data-cites="oriolo_steroid_2020">(<a
                 href="#ref-oriolo_steroid_2020"
                 role="doc-biblioref">2020</a>)</span> identified</p>
@@ -1148,7 +1145,7 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 the highest diagnostic accuracy with simultaneously a
                 sensitivity of 91% and specificity of 92%.</li>
                 </ol></li>
-                <li><p>Ng <em>et al.</em> <span class="citation"
+                <li><p>Ng et al. <span class="citation"
                 data-cites="ng_serum_2023">(<a href="#ref-ng_serum_2023"
                 role="doc-biblioref">2023</a>)</span> found using
                 LC-MS/MS</p>
@@ -1164,14 +1161,14 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 21DF)/cortisol &gt; 13.6 (100% sensitivity, 85%
                 specificity).</li>
                 </ol></li>
-                <li><p>Watanabe <em>et al.</em> <span class="citation"
+                <li><p>Watanabe et al. <span class="citation"
                 data-cites="watanabe_high_2022">(<a
                 href="#ref-watanabe_high_2022"
                 role="doc-biblioref">2022</a>)</span> found that
                 combining 21DF, 11-deoxycortisol/17OH-P, and (A4 +
                 17OH-P)/cortisol achieved 100% sensitivity and 92%
                 positive predictive value.</p></li>
-                <li><p>Held <em>et al.</em> <span class="citation"
+                <li><p>Held et al. <span class="citation"
                 data-cites="held_21deoxycortisol_2022">(<a
                 href="#ref-held_21deoxycortisol_2022"
                 role="doc-biblioref">2022</a>)</span> identified a 21DF
@@ -1335,7 +1332,7 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 href="#ref-kanehisa_understanding_2019"
                 role="doc-biblioref">Kanehisa, 2019</a>; <a
                 href="#ref-kanehisa_kegg_2025"
-                role="doc-biblioref">Kanehisa et al., 2025</a>; @ <a
+                role="doc-biblioref">Kanehisa et al., 2025</a>; <a
                 href="#ref-kanehisa_kegg_2000"
                 role="doc-biblioref">Kanehisa &amp; Goto, 2000</a>; <a
                 href="#ref-nasiri_5areductase_2015"
@@ -1563,7 +1560,7 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 data-cites="pretorius_11ketotestosterone_2016">(<a
                 href="#ref-pretorius_11ketotestosterone_2016"
                 role="doc-biblioref">Pretorius et al., 2016</a>)</span>
-                (but see Rege <em>et al.</em> <span class="citation"
+                (but see Rege et al. <span class="citation"
                 data-cites="rege_liquid_2013">(<a
                 href="#ref-rege_liquid_2013"
                 role="doc-biblioref">2013</a>)</span>) at the AR than
@@ -1629,11 +1626,11 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 <p>While insulin directly stimulates steroidogenic
                 enzymes, it concurrently disrupts inositol metabolism,
                 creating a self-reinforcing cycle of hyperandrogenism.
-                Seminal studies by Heimark <em>et al.</em> <span
-                class="citation" data-cites="heimark_decreased_2014">(<a
+                Seminal studies by Heimark et al. <span class="citation"
+                data-cites="heimark_decreased_2014">(<a
                 href="#ref-heimark_decreased_2014"
-                role="doc-biblioref">2014</a>)</span> and Unfer <em>et
-                al.</em> <span class="citation"
+                role="doc-biblioref">2014</a>)</span> and Unfer et al.
+                <span class="citation"
                 data-cites="unfer_hyperinsulinemia_2014">(<a
                 href="#ref-unfer_hyperinsulinemia_2014"
                 role="doc-biblioref">2014</a>)</span> revealed that
@@ -1647,8 +1644,8 @@ like to contribute a review, please <a href='/about'>get in touch</a>!
                 role="doc-biblioref">Heimark et al., 2014</a>; <a
                 href="#ref-unfer_hyperinsulinemia_2014"
                 role="doc-biblioref">Unfer et al., 2014</a>)</span>.
-                This “DCI paradox”, conjectured by Carlomagno <em>et
-                al.</em> <span class="citation"
+                This “DCI paradox”, conjectured by Carlomagno et al.
+                <span class="citation"
                 data-cites="carlomagno_dchiroinositol_2011">(<a
                 href="#ref-carlomagno_dchiroinositol_2011"
                 role="doc-biblioref">2011</a>)</span> a few years prior,
