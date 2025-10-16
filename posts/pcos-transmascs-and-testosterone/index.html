@@ -48,22 +48,28 @@
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/latin-modern-sans" />
   <script type="module" src="/js/citation.js"></script>
   <script type="module" src="/js/toc.js"></script>
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WHSAH Atom feed" />
 </head>
 <body>
 <div id="navigation-container">
     <div id="navigation-options">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <details id="navigation-menu">
-            <summary><b>Posts</b></summary>
-            <nav>
-                <ul>
-                    <li><a href="/posts/pcos-transmascs-and-testosterone">PCOS, transmascs & testosterone</a></li>
-                    <li><a href="/posts/rethinking-progesterone-and-androgens">Rethinking Progesterone and Androgens</a></li>
-                    <li><a href="/posts/english-translation-of-a-method-for-preparing-estradiol">English Translation of "A Method for Preparing Estradiol"</a></li>
-                </ul>
-            </nav>
-        </details>
+        <div class="nav-option"><a href="/">Home</a></div>
+        <div class="nav-option"><a href="/about">About</a></div>
+        <div class="nav-option">
+            <details id="navigation-menu">
+                <summary><b>Posts</b></summary>
+                <nav>
+                    <ul>
+                        <li><a href="/posts/pcos-transmascs-and-testosterone">PCOS, transmascs & testosterone</a></li>
+                        <li><a href="/posts/rethinking-progesterone-and-androgens">Rethinking Progesterone and Androgens</a></li>
+                        <li><a href="/posts/english-translation-of-a-method-for-preparing-estradiol">English Translation of "A Method for Preparing Estradiol"</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
+        <div class="nav-option feed">
+            <a href="/feed.xml">Feed</a>
+        </div>
     </div>
 </div>
 <script>

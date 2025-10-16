@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>WHSAH</title>
+<link href="https://whsah.co"/>
+<link href="https://whsah.co/feed.xml" rel="self" />
+<updated>2025-10-14T00:00:00Z</updated>
+<author>
+<name>WHSAH Editor</name>
+<email>whsah@proton.me</email>
+<uri>https://whsah.co/about</uri>
+</author>
+<id>urn:uuid:cb525818-6706-4281-bc0e-e6c3e740f35e</id>
+<subtitle>WHSAH is a research outlet for trans people, by trans people.</subtitle>
+
+<entry>
+<id>urn:uuid:ffc3285a-68ab-470a-84e0-549ca1413344</id>
+<link rel="alternate" href="https://whsah.co/posts/pcos-transmascs-and-testosterone/"/>
+<title type="html">PCOS, transmascs &amp; testosterone</title>
+<summary>Polycystic ovary syndrome (PCOS) is a common medical condition in cisgender women. Typically regarded as an hormonal/reproductive disorder, its metabolic dimension is often overlooked. Misunderstood and inadequately managed in cisgender women, PCOS is also prevalent in transmasculine individuals, whose treatment presents some unique challenges. Even in transmasculine individuals without PCOS, this topic is relevant as it leads to misconceptions and allows us to discuss issues related to scientific research in transgender health. This article provides an overview of PCOS-related aspects in hormonal transition and among transmasculine people: prevalence, the causal relationship between testosterone treatment and PCOS, and the impact of PCOS on testosterone therapy.</summary>
+<published>2025-10-13T00:00:00Z</published>
+<updated>2025-10-13T00:00:00Z</updated>
+<author>
+<name>biyokea</name>
+</author>
+<author>
+<name>alix</name>
+</author>
+</entry>
+
+<entry>
+<id>urn:uuid:47836cee-89bf-47c7-80e3-d22b4becb39c</id>
+<link rel="alternate" href="https://whsah.co/posts/english-translation-of-a-method-for-preparing-estradiol/"/>
+<title>English Translation of “A Method for Preparing Estradiol”</title>
+<summary type="html">This post is a translation of patent #CN104293873A registered in China.</summary>
+<published>2025-03-27T00:00:00Z</published>
+<updated>2025-03-27T00:00:00Z</updated>
+<author>
+<name>alix</name>
+</author>
+</entry>
+
+<entry>
+<id>urn:uuid:f9ad0b93-2dd5-4f76-9813-0ed1c76d181c</id>
+<link rel="alternate" href="https://whsah.co/posts/rethinking-progesterone-and-androgens/"/>
+<title>Rethinking Progesterone and Androgens</title>
+<summary>The direct conversion of progesterone to potent androgens like DHT is rare in healthy individuals, as the "backdoor pathway" for androgen synthesis is not significant in humans, unlike in some animals. Exceptions occur in conditions like non-classic congenital adrenal hyperplasia (ncCAH), where enzyme deficiencies disrupt hormone metabolism, or during fetal male development. Androgenic symptoms attributed to progesterone are more likely due to its indirect effects on adrenal regulation, insulin sensitivity, and natural variations in the expression of key enzymes. Progesterone is primarily metabolized into non-androgenic compounds, such as allopregnanolone and corticosteroids, with only minimal conversion to DHT except under specific conditions. In individuals with ncCAH, progesterone supplementation can exacerbate hyperandrogenism due to enzyme deficiencies, which diverts hormone synthesis toward androgens, or further dysregulate insulin resistance and hyperinsulinemia in people with PCOS-like metabolic disorders. Progesterone also interacts in complex ways with the HPA axis and insulin signaling, and high non-oral doses could disrupt hormonal and metabolic balances, potentially causing symptoms mistaken for androgenic activity. Diagnosis of ncCAH and PCOS-like syndrome has improved with biomarkers like 21-deoxycortisol and 11-oxygenated androgens, and treatment in the context of gender affirming hormonal therapy is relatively simple and involves discontinuing progesterone, using anti-androgens (e.g., dutasteride), or supervised low-dose glucocorticoid therapy.</summary>
+<published>2025-03-23T00:00:00Z</published>
+<updated>2025-06-18T00:00:00Z</updated>
+<author>
+<name>alix</name>
+</author>
+</entry>
+
+</feed>

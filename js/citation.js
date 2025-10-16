@@ -53,7 +53,7 @@ for (let entry of document.getElementsByClassName("csl-entry")) {
 
         wrapper.addEventListener('mouseenter', () => {
 	    // Position the tooltip underneath the citation link, but further left if necessary
-            const contentPadding = parseFloat(window.getComputedStyle(document.getElementsByClassName("render-area")[0]).paddingRight, 10);
+            const contentPadding = parseFloat(window.getComputedStyle(document.getElementsByClassName("content-area")[0]).paddingRight, 10);
 	    const contentWidth = window.innerWidth - contentPadding*2;
 	    const boxStyle = window.getComputedStyle(tooltip);
 	    const boxWidth = Math.min(parseFloat(boxStyle.width, 10) + parseFloat(boxStyle.paddingRight)*2 + 2, contentWidth + 2);

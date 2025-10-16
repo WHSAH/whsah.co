@@ -34,17 +34,17 @@ body {
 .inset {
   background: color-mix(in srgb, Canvas, CanvasText 5%);
   padding: 0.3rem 1rem 0.5rem;
-  border: 1px solid CanvasText;
 }
 
 .inset summary {
+  background: color-mix(in srgb, Canvas, CanvasText 8%);
   cursor: pointer;
   margin: -0.3rem -1rem -0.5rem;
   padding: 0.3rem 1rem 0.5rem;
 }
 
-.inset details:hover summary {
-  background: color-mix(in srgb, Canvas, CanvasText 10%);
+.inset summary:hover {
+  background: color-mix(in srgb, Canvas, CanvasText 11%);
 }
 
 .citation-tooltip {
@@ -62,12 +62,13 @@ body {
 }
 
 .citation-backlinks {
-    margin-inline-start: 0.5em;
-    margin-inline-end: 0.5em;
+  margin-inline-start: 0.5em;
+  margin-inline-end: 0.5em;
 }
 
 .hanging-indent div.csl-entry {
-    text-indent: -3.5em !important; /* fix indent stacking between references container and csl-entry child */
+  text-indent: -3.5em !important;
+  /* fix indent stacking between references container and csl-entry child */
 }
 
 .references {
@@ -112,7 +113,19 @@ body {
 #navigation-options {
   grid-area: navoptions;
   padding-left: 0.5rem;
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
 }
+
+.nav-option {
+  /* padding-left: 0.5rem; */
+  padding-right: 0.5rem;
+}
+
+/* .feed {
+  margin-left: auto;
+} */
 
 #navigation-menu {
   display: inline-block;
@@ -183,14 +196,15 @@ body {
   }
 
   #navigation-container {
-        padding-top: 1rem;
-        font-size: 1.2rem;
-        grid-template-columns: auto max-content auto;
-    }
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    /* grid-template-columns: auto 1fr auto; */
+    grid-template-columns: auto max-content auto;
+  }
 
-    #navigation-options {
-        padding-left: 0;
-    }
+  #navigation-options {
+    padding-left: 0;
+  }
 
   #navigation-menu>nav {
     font-size: 1rem;
@@ -494,10 +508,10 @@ table td {
   }
 
   .content-area {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-    }
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
 
   .citation-backlinks,
   .citation-tooltip {
