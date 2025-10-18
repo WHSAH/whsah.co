@@ -17,8 +17,8 @@
       <body>
 	<div id="navigation-container">
 	    <div id="navigation-options">
-		    <a href="/">Home</a>
-	    </div>
+            <div class="nav-option"><a href="/">Home</a></div>
+        </div>
     </div>
 	<div class="grid-area">
 	    <div class="content-area">
