@@ -4,7 +4,7 @@
 <title>WHSAH</title>
 <link href="https://whsah.co"/>
 <link href="https://whsah.co/feed.xml" rel="self" />
-<updated>2025-10-14T00:00:00Z</updated>
+<updated>2025-11-29T00:00:00Z</updated>
 <author>
 <name>WHSAH Editor</name>
 <email>whsah@proton.me</email>
@@ -12,6 +12,30 @@
 </author>
 <id>urn:uuid:cb525818-6706-4281-bc0e-e6c3e740f35e</id>
 <subtitle>WHSAH is a research outlet for trans people, by trans people.</subtitle>
+
+<entry>
+<id>urn:uuid:57e55550-528d-4490-a227-ef95cabd3a8e</id>
+<link rel="alternate" href="https://whsah.co/posts/how-do-i-inject-my-diy-hormones/"/>
+<title type="html">How do I inject my DIY hormones?!</title>
+<summary>Brief, non-exhaustive harm-reduction guide for trans people self-injecting estrogen or testosterone. It covers safe vial handling, needle selection, subcutaneous and intramuscular injection techniques, dosage recommendations, and blood-test guidance for GB-based users.</summary>
+<published>2025-11-29T00:00:00Z</published>
+<updated>2025-11-29T00:00:00Z</updated>
+<author>
+<name>AMT</name>
+</author>
+</entry>
+
+<entry>
+<id>urn:uuid:140d57b5-836b-42e2-bafe-3e866d5fdf24</id>
+<link rel="alternate" href="https://whsah.co/posts/a-short-explainer-on-risks-of-diy-hrt-gb/"/>
+<title type="html">A Short Explainer on the Risks of DIY HRT - Great Britain Based Guide</title>
+<summary>Zine discussing the risks of DIY hormone replacement therapy, prescribed and DIY approaches, product quality concerns, legal aspects of importing prescription-only medicines, and the importance of blood-test monitoring, with a focus on Great Britain.</summary>
+<published>2025-11-29T00:00:00Z</published>
+<updated>2025-11-29T00:00:00Z</updated>
+<author>
+<name>« »</name>
+</author>
+</entry>
 
 <entry>
 <id>urn:uuid:ffc3285a-68ab-470a-84e0-549ca1413344</id>

@@ -499,12 +499,20 @@ table td {
     max-width: 100%;
   }
 
+  .print-page-break {
+    break-after: page;
+  }
+
   .editors-box {
     border: 1px solid #999;
   }
 
   .grid-area {
     all: unset;
+  }
+
+  .do-not-print {
+    display: none !important;
   }
 
   .content-area {
@@ -537,12 +545,12 @@ table td {
   blockquote {
     border: 1px solid #999;
     padding-right: 1rem;
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   tr,
   img {
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   img {
@@ -584,6 +592,6 @@ table td {
   h3,
   h4,
   h5 {
-    page-break-after: avoid !important;
+    break-after: avoid !important;
   }
 }
