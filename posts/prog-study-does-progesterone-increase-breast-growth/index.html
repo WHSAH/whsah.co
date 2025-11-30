@@ -27,9 +27,30 @@ study” tells us (and what it doesn’t)</title>
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-</style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }</style>
   <link rel="stylesheet" href="/css/index.css" />
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/latin-modern-sans" />
+  <script type="module" src="/js/citation.js"></script>
   <script type="module" src="/js/toc.js"></script>
   <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WHSAH Atom feed" />
 </head>
@@ -82,22 +103,24 @@ alix   | published 2025-11-30
                 <div class="abstract-title"><h2>Abstract</h2></div>
                 <p>Whether progesterone promotes breast growth has long
                 been an endless source of conversation within the
-                community (<a
-                href="https://transfemscience.org/articles/progestogens-breast-dev/">Aly,
-                2020</a>). These discussions frequently provoke
-                light-hearted but sometimes heated and polarizing
-                debates that, more often than not, lead nowhere.
-                Recently, results from an unpublished study (the
-                infamous “prog study”) investigating the effect of
-                progesterone on breast growth have been circulating
-                online. While the fact that a clinical trial on the use
-                of progesterone in transfem hormone therapy has been
-                conducted was long overdue and most welcome,
-                <strong>this specific study has too many methodological
-                shortcomings, including possible statistical errors, for
-                us to conclude that progesterone increases breast growth
-                (or not)</strong>. As before, you can try it if you
-                wish, but don’t get your hopes up too much.</p>
+                community <span class="citation"
+                data-cites="aly_comprehensive_2020">(<a
+                href="#ref-aly_comprehensive_2020"
+                role="doc-biblioref">Aly, 2020</a>)</span>. These
+                discussions frequently provoke light-hearted but
+                sometimes heated and polarizing debates that, more often
+                than not, lead nowhere. Recently, results from an
+                unpublished study (the infamous “prog study”)
+                investigating the effect of progesterone on breast
+                growth have been circulating online. While the fact that
+                a clinical trial on the use of progesterone in transfem
+                hormone therapy has been conducted was long overdue and
+                most welcome, <strong>this specific study has too many
+                methodological shortcomings, including possible
+                statistical errors, for us to conclude that progesterone
+                increases breast growth (or not)</strong>. As before,
+                you can try it if you wish, but don’t get your hopes up
+                too much.</p>
                 </div>
                     </header>
                             <nav id="TOC" role="doc-toc">
@@ -126,6 +149,8 @@ alix   | published 2025-11-30
             href="#bottom-line-does-progesterone-promote-breast-growth"
             id="toc-bottom-line-does-progesterone-promote-breast-growth">Bottom
             line: does progesterone promote breast growth?</a></li>
+            <li><a href="#bibliography"
+            id="toc-bibliography">Bibliography</a></li>
             </ul>
             </nav>
                 <h2 data-number="1" id="what-is-the-prog-study">What is
@@ -138,9 +163,11 @@ alix   | published 2025-11-30
                 similar combinations with double the dose of estrogen or
                 progesterone.</li>
                 <li>A protocol for the study explaining what was planned
-                was published in 2023 (<a
-                href="https://doi.org/10.1186/s40360-023-00724-4">Dijkman
-                et al., 2023</a>).</li>
+                was published in 2023 <span class="citation"
+                data-cites="dijkman_addition_2023">(<a
+                href="#ref-dijkman_addition_2023"
+                role="doc-biblioref">Dijkman et al.,
+                2023</a>)</span>.</li>
                 </ul>
                 <h2 data-number="2"
                 id="where-can-i-read-the-full-study">Where can I read
@@ -151,8 +178,8 @@ alix   | published 2025-11-30
                 <li>Some early results were presented at the conference
                 of the European Professional Association for Trans
                 Health (EPATH) in September 2025.</li>
-                <li>The <a
-                href="https://web.archive.org/web/20251129140751/https://epath.eu/wp-content/uploads/2025/10/Abstract_booklet_10-10-2025.pdf#page=277">conference
+                <li>The
+                <a href="https://web.archive.org/web/20251129140751/https://epath.eu/wp-content/uploads/2025/10/Abstract_booklet_10-10-2025.pdf#page=277" target="_blank">conference
                 abstract</a> from EPATH (reproduced below<a href="#fn1"
                 class="footnote-ref" id="fnref1"
                 role="doc-noteref"><sup>1</sup></a>) is the only
@@ -172,8 +199,8 @@ alix   | published 2025-11-30
                 (group EEP, receiving 200 mg daily) or double the
                 typical progesterone dose (group EEPP, receiving 400 mg
                 daily) displayed larger average increases.</li>
-                <li>These increases were reported as <a
-                href="https://en.wikipedia.org/wiki/Statistical_significance">statistically
+                <li>These increases were reported as
+                <a href="https://en.wikipedia.org/wiki/Statistical_significance" target="_blank">statistically
                 significantly</a> larger than the control group
                 (<strong>but see caveats below</strong>).</li>
                 </ul>
@@ -228,32 +255,44 @@ alix   | published 2025-11-30
                 <ul>
                 <li>The “standard estrogen dose” at Amsterdam UMC is
                 whatever gets the person into the Dutch target range of
-                200-400 pmol/L (54-109 pg/ml). <strong>This is
-                significantly below the WPATH standard of 367-734 pmol/l
-                (100-200 pg/ml).</strong> Thus, the “double estrogen
-                dose” groups were actually receiving a dose in line with
-                international recommendations.</li>
+                200-400 pmol/L (54-109 pg/ml) <span class="citation"
+                data-cites="conemans_endocrinologische_2022">(<a
+                href="#ref-conemans_endocrinologische_2022"
+                role="doc-biblioref">Conemans et al., 2022</a>)</span>.
+                <strong>This is significantly below the WPATH standard
+                of 367-734 pmol/l (100-200 pg/ml)</strong> <span
+                class="citation" data-cites="coleman_standards_2022">(<a
+                href="#ref-coleman_standards_2022"
+                role="doc-biblioref">Coleman et al., 2022</a>)</span>.
+                Thus, the “double estrogen dose” groups were actually
+                receiving a dose in line with international
+                recommendations.</li>
                 <li>While all progesterone was meant to be taken orally,
-                people on Reddit who claimed to be involved in the study
-                have said that some participants opted to take it
-                rectally without telling the study authors. In any
-                event, <strong>actual progesterone levels for any group
-                in the study have not been reported.</strong></li>
+                people on Reddit who claimed to be involved in the
+                study<a href="#fn2" class="footnote-ref" id="fnref2"
+                role="doc-noteref"><sup>2</sup></a> have said that some
+                participants opted to take it rectally without telling
+                the study authors. In any event, <strong>actual
+                progesterone levels for any group in the study have not
+                been reported.</strong></li>
                 <li>The reported percent increases compared participants
                 in one group to participants in the control group,
                 rather than comparing participants’ breast sizes before
                 and after treatment. In other words, the double E +
-                200mg P group didn’t have a “37% increase in breast
+                200 mg P group didn’t have a “37% increase in breast
                 volume”– rather, their increase was 37% greater than the
                 increase the control group had (confusing isn’t
                 it).</li>
                 <li><strong>The authors did not measure breast size
                 after discontinuing progesterone.</strong> progesterone
                 is known to cause fluid retention which can impact
-                breast size, but reverses if progesterone is
-                discontinued. Whether the effect shown in the study is
-                permanent growth or simply fluid retention is therefore
-                unclear.</li>
+                breast size <span class="citation"
+                data-cites="dillard_breast_2025">(<a
+                href="#ref-dillard_breast_2025"
+                role="doc-biblioref">Dillard et al., 2025</a>)</span>,
+                but reverses if progesterone is discontinued. Whether
+                the effect shown in the study is permanent growth or
+                simply fluid retention is therefore unclear.</li>
                 <li>15 people per group (total 90 people) is a small
                 number of participants, and the confidence intervals and
                 error bars for each group are super wide, making it hard
@@ -271,36 +310,38 @@ alix   | published 2025-11-30
                 effect after controlling for BMI. Specifically, there
                 was a trend towards reduced breast volume in the EP and
                 EPP groups. Note that the use of the term “trend” is
-                common parlance in applied statistics for an <a
-                href="https://xkcd.com/1478/">“apparent but
-                statistically non-significant, or borderline
-                significant”</a> effect. We of course do not know if
+                common parlance in applied statistics for an
+                “<a href="https://xkcd.com/1478/" target="_blank">apparent
+                but statistically non-significant, or borderline
+                significant</a>” effect. We of course do not know if
                 this was the intended use.</li>
-                <li>If so, this would represent an instance of <a
-                href="https://en.wikipedia.org/wiki/Simpson&#39;s_paradox">Simpson’s
+                <li>If so, this would represent an instance of
+                <a href="https://en.wikipedia.org/wiki/Simpson's_paradox" target="_blank">Simpson’s
                 paradox</a>, a classical yet all-to-common statistical
                 phenomena encountered in clinical studies when important
                 confounding variables are not properly accounted
                 for.</li>
                 <li>We do not know if the statistical analysis includes
-                an appropriate <a
-                href="https://en.wikipedia.org/wiki/Multiple_comparisons_problem#Multiple_testing_correction">p-value
-                correction</a>, necessary in the presence of <a
-                href="https://xkcd.com/882/">multiple hypothesis
-                testing</a>.</li>
-                <li>The original protocol (<a
-                href="https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-023-00724-4">Dijkman
-                et al., 2023</a>) called for a statistical analysis that
-                would treat predictors, stratification, interaction
-                terms, and confounding variables appropriately using a
-                mixed model approach, which would address the previous
-                concerns. At the conference, however, the results were
-                presented as five simple percent differences between
-                each individual treatment group and the control. These
-                differences appear to have been analyzed separately,
-                rather than as fixed-effect coefficients within a single
-                model. This reporting style suggests that the full mixed
-                model analysis has yet to be performed or could not be
+                an appropriate
+                <a href="https://en.wikipedia.org/wiki/Multiple_comparisons_problem#Multiple_testing_correction" target="_blank">p-value
+                correction</a>, necessary in the presence of
+                <a href="https://xkcd.com/882/" target="_blank">multiple
+                hypothesis testing</a>.</li>
+                <li>The original protocol <span class="citation"
+                data-cites="dijkman_addition_2023">(<a
+                href="#ref-dijkman_addition_2023"
+                role="doc-biblioref">Dijkman et al., 2023</a>)</span>
+                called for a statistical analysis that would treat
+                predictors, stratification, interaction terms, and
+                confounding variables appropriately using a mixed model
+                approach, which would address the previous concerns. At
+                the conference, however, the results were presented as
+                five simple percent differences between each individual
+                treatment group and the control. These differences
+                appear to have been analyzed separately, rather than as
+                fixed-effect coefficients within a single model. This
+                reporting style suggests that the full mixed model
+                analysis has yet to be performed or could not be
                 completed. Possible reasons include missing data or poor
                 data quality arising for example from participants’
                 failure to adhere to the protocol.</li>
@@ -327,11 +368,72 @@ alix   | published 2025-11-30
                 Amsterdam UMC and other Dutch clinics to increase their
                 standard estradiol target range and offer progesterone
                 to anyone who wants to try it.</li>
-                <li>See Aly (<a
-                href="https://transfemscience.org/articles/progestogens-breast-dev/#update-3-dreijerink-et-al-2025">2020,
+                <li>See Aly
+                (<a href="http://archive.today/2025.11.30-193704/https://transfemscience.org/articles/progestogens-breast-dev/#update-3-dreijerink-et-al-2025" target="_blank">2020,
                 update #3 2025</a>) over at TFS for an alternative and
                 slightly more optimistic take on this study.</li>
                 </ul>
+                <h1 class="unnumbered"
+                id="bibliography">Bibliography</h1>
+                <div id="refs"
+                class="references csl-bib-body hanging-indent"
+                data-entry-spacing="0" data-line-spacing="2"
+                role="list">
+                <div id="ref-aly_comprehensive_2020" class="csl-entry"
+                role="listitem">
+                Aly. (2020). A <span>Comprehensive Review</span> of the
+                <span>Potential</span> of <span>Progestogens</span> for
+                <span>Enhancing Breast Development</span> in
+                <span>Transfeminine People</span>. <em>Transfeminine
+                Science</em>. <a
+                href="http://archive.today/2025.11.30-193704/https://transfemscience.org/articles/progestogens-breast-dev/">http://archive.today/2025.11.30-193704/https://transfemscience.org/articles/progestogens-breast-dev/</a>
+                </div>
+                <div id="ref-coleman_standards_2022" class="csl-entry"
+                role="listitem">
+                Coleman, E., Radix, A. E., Bouman, W. P., Brown, G. R.,
+                De Vries, A. L. C., Deutsch, M. B., Ettner, R., Fraser,
+                L., Goodman, M., Green, J., Hancock, A. B., Johnson, T.
+                W., Karasic, D. H., Knudson, G. A., Leibowitz, S. F.,
+                Meyer-Bahlburg, H. F. L., Monstrey, S. J., Motmans, J.,
+                Nahata, L., … Arcelus, J. (2022). Standards of
+                <span>Care</span> for the <span>Health</span> of
+                <span>Transgender</span> and <span>Gender Diverse
+                People</span>, <span>Version</span> 8. <em>International
+                Journal of Transgender Health</em>, <em>23</em>,
+                S1–S259. <a
+                href="https://doi.org/10.1080/26895269.2022.2100644">https://doi.org/10.1080/26895269.2022.2100644</a>
+                </div>
+                <div id="ref-conemans_endocrinologische_2022"
+                class="csl-entry" role="listitem">
+                Conemans, E. B., Mello, N. van, Dreijerink, K. M. A.,
+                Stenvers, D. J., &amp; Heijer, M. den. (2022).
+                <em>Endocrinologische nazorgcontroles transgender
+                personen</em> [Unpublished medical protocol, Versie
+                1.0]. Amsterdam UMC, locatie VUmc.
+                </div>
+                <div id="ref-dijkman_addition_2023" class="csl-entry"
+                role="listitem">
+                Dijkman, B. A. M., Helder, D., Boogers, L. S., Gieles,
+                N. C., Heesewijk, J. O. van, Slaa, S. te, Liberton, N.
+                P. T. J., Wiepjes, C. M., Blok, C. J. M. de, Heijer, M.
+                den, &amp; Dreijerink, K. M. A. (2023). Addition of
+                progesterone to feminizing gender-affirming hormone
+                therapy in transgender individuals for breast
+                development: A randomized controlled trial. <em>BMC
+                Pharmacology and Toxicology</em>, <em>24</em>(1), 80. <a
+                href="https://doi.org/10.1186/s40360-023-00724-4">https://doi.org/10.1186/s40360-023-00724-4</a>
+                </div>
+                <div id="ref-dillard_breast_2025" class="csl-entry"
+                role="listitem">
+                Dillard, T., Jones, J., Bernard, B., Rudd, R., Anderson,
+                S., Foster, C., &amp; Goswami, T. (2025). Breast
+                <span>Density</span> and <span>Volume Changes
+                During</span> the <span>Menstrual Cycle</span>.
+                <em>Advances in General Practice of Medicine</em>,
+                <em>6</em>(1), 120–133. <a
+                href="https://doi.org/10.25082/AGPM.2024.01.003">https://doi.org/10.25082/AGPM.2024.01.003</a>
+                </div>
+                </div>
                 <section id="footnotes"
                 class="footnotes footnotes-end-of-document"
                 role="doc-endnotes">
@@ -363,12 +465,12 @@ alix   | published 2025-11-30
                 randomized into six groups, using a factorial design,
                 receiving the standard dose of estradiol (E , control),
                 the standard dose of estradiol and micronized
-                progesterone 200 mg daily (EP), the standard dose of
-                estradiol and micronized progesterone 400 mg daily
+                progesterone 200 mg daily (EP), the standard dose of
+                estradiol and micronized progesterone 400 mg daily
                 (EPP), twice the standard dose of estradiol (EE), twice
                 the standard dose of estradiol and micronized
-                progesterone 200 mg daily (EEP), or twice the standard
-                dose of estradiol and micronized progesterone 400 mg
+                progesterone 200 mg daily (EEP), or twice the standard
+                dose of estradiol and micronized progesterone 400 mg
                 daily (EEPP), all for a duration of 12 months. The
                 primary objective was to investigate the change in
                 breast volume (in %), which was quantified by 3D
@@ -400,6 +502,44 @@ alix   | published 2025-11-30
                 focus on long-term effects of progesterone as part of
                 feminizing GAHT regimens.<a href="#fnref1"
                 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+                <li id="fn2"><p>In a thread titled “<em>Adding
+                Progesterone to HRT Regimen helps increase breast
+                growth, according to Amsterdam UMC.”</em>,
+                (<a href="https://web.archive.org/web/20251130182105/https://old.reddit.com/r/MtF/comments/1n9w2xz/adding_progesterone_to_hrt_regimen_helps_increase/ncr4j2h/" target="_blank">archive.org</a>,
+                <a href="https://archive.ph/jg4UL" target="_blank">archive.ph</a>,
+                accessed 2025-11-30), user <em>u/seulgimonster</em>
+                states</p>
+                <blockquote>
+                <p>Yeah it changes a lot indeed, <strong>I was in a very
+                big dilemma at a time wether to tell the researchers or
+                not that most of them were just taking it
+                rectally</strong>; most of the girls were asking about
+                progesterone back then due to Will Powers’ Method for a
+                couple of years. Vumc didn’t want to prescribe it at
+                all.</p>
+                <p>I think due to these reasons and the increase of
+                girls asking about it they decided to study it, except
+                they ignored the fact that Powers recommends rectal
+                administration, which <strong>most of these girls
+                knew/did in secret (at least 5 of them; maybe more but I
+                don’t know them) due to fear of not being able to
+                receive the progesterone otherwise.</strong></p>
+                <p>Sadly <strong>I decided not to say anything in that
+                moment due to constant mistreatment by that clinic
+                towards me, and it probably would’ve killed the study
+                since it was already going for 6 months at the time when
+                I joined</strong>….</p>
+                <p>some of these girls were desperate for adequate
+                care/bad financial state so I just couldn’t bring myself
+                to tell them. Anyway, now that the study is over I
+                might, but I fear they will stop progesterone for them.
+                I don’t have the energy now since I am currently in a
+                formal complaint battle with one of their docs (not with
+                the researchers) and recovering from an Anterior Uveitis
+                episode.</p>
+                </blockquote>
+                <a href="#fnref2" class="footnote-back"
+                role="doc-backlink">↩︎</a></li>
                 </ol>
                 </section>
     </div>
