@@ -164,9 +164,8 @@ body {
 }
 
 #navigation-menu ul {
-  list-style: none;
   padding-left: 0;
-  margin: 0;
+  margin: 1rem;
   white-space: nowrap;
 }
 
