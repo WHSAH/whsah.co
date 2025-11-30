@@ -4,7 +4,7 @@
 <title>WHSAH</title>
 <link href="https://whsah.co"/>
 <link href="https://whsah.co/feed.xml" rel="self" />
-<updated>2025-11-29T00:00:00Z</updated>
+<updated>2025-11-30T00:00:00Z</updated>
 <author>
 <name>WHSAH Editor</name>
 <email>whsah@proton.me</email>
@@ -12,6 +12,24 @@
 </author>
 <id>urn:uuid:cb525818-6706-4281-bc0e-e6c3e740f35e</id>
 <subtitle>WHSAH is a research outlet for trans people, by trans people.</subtitle>
+
+<entry>
+<id>urn:uuid:9c5b312b-e350-447e-8959-73ae02236292</id>
+<link rel="alternate" href="https://whsah.co/posts/prog-study-does-progesterone-increase-breast-growth/"/>
+<title type="html">Does progesterone increase breast growth? What the recent "prog study" tells us (and what it doesn't)</title>
+<summary>Whether progesterone promotes breast growth has long been an endless source of conversation within the community (Aly, 2020). These discussions frequently provoke light-hearted but sometimes heated and polarizing debates that, more often than not, lead nowhere. Recently, results from an unpublished study (the infamous "prog study") investigating the effect of progesterone on breast growth have been circulating online. While the fact that a clinical trial on the use of progesterone in transfem hormone therapy has been conducted was long overdue and most welcome, **this specific study has too many methodological shortcomings, including possible statistical errors, for us to conclude that progesterone increases breast growth (or not)**. As before, you can try it if you wish, but don't get your hopes up too much.</summary>
+<published>2025-11-30T00:00:00Z</published>
+<updated>2025-11-30T00:00:00Z</updated>
+<author>
+<name>Ari</name>
+</author>
+<author>
+<name>uriel</name>
+</author>
+<author>
+<name>alix</name>
+</author>
+</entry>
 
 <entry>
 <id>urn:uuid:57e55550-528d-4490-a227-ef95cabd3a8e</id>
