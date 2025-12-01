@@ -335,10 +335,10 @@ h6 {
 }
 
 blockquote {
-  color: #999;
   margin: 0;
   padding-left: 3rem;
-  border-left: 0.5rem #1a1726 solid;
+  border-left: 0.5rem color-mix(in srgb, Canvas, CanvasText 50%) solid;
+  background-color: color-mix(in srgb, Canvas, CanvasText 3%);
 }
 
 hr {
