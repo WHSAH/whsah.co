@@ -19,6 +19,7 @@ body {
   margin: 0;
   font-size: 1.3rem;
   padding-top: 7rem;
+  padding-bottom: 10rem;
 }
 
 .editors-box {
@@ -496,6 +497,7 @@ table td {
   body {
     font-size: 12pt;
     max-width: 100%;
+    padding-bottom: 0;
   }
 
   .print-page-break {
