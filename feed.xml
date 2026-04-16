@@ -4,7 +4,7 @@
 <title>WHSAH</title>
 <link href="https://whsah.co"/>
 <link href="https://whsah.co/feed.xml" rel="self" />
-<updated>2025-11-30T00:00:00Z</updated>
+<updated>2026-04-16T00:00:00Z</updated>
 <author>
 <name>WHSAH Editor</name>
 <email>whsah@proton.me</email>
@@ -12,6 +12,18 @@
 </author>
 <id>urn:uuid:cb525818-6706-4281-bc0e-e6c3e740f35e</id>
 <subtitle>WHSAH is a research outlet for trans people, by trans people.</subtitle>
+
+<entry>
+<id>urn:uuid:26a58dc0-88e3-44d8-995a-791ce56b83f1</id>
+<link rel="alternate" href="https://whsah.co/posts/doctor-patient-power-dynamics/"/>
+<title type="html">Doctor/patient power dynamics: rethinking care expectations in trans health</title>
+<summary>This post is a translation of "Dynamiques de pouvoir médecins/patient·es : penser les attendus du soin en santé trans", an edited version of a presentation the author delivered on March 28, 2026, introducing the afternoon for healthcare professionals at the 3rd TransAzur seminar in Nice, France. The theme of the presentation was "Les attendus du soin" (transl. "expectations of care").</summary>
+<published>2026-04-16T00:00:00Z</published>
+<updated>2026-04-16T00:00:00Z</updated>
+<author>
+<name>uriel</name>
+</author>
+</entry>
 
 <entry>
 <id>urn:uuid:9c5b312b-e350-447e-8959-73ae02236292</id>

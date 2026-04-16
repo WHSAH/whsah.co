@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="uriel" />
+  <meta name="dcterms.date" content="2026-04-16" />
+<title>Doctor/patient power dynamics: rethinking care expectations in
+trans health</title>
+<style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/latin-modern-sans" />
+  <script type="module" src="/js/toc.js"></script>
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WHSAH Atom feed" />
+</head>
+<body>
+<div id="navigation-container">
+    <div id="navigation-options">
+        <div class="nav-option"><a href="/">Home</a></div>
+        <div class="nav-option"><a href="/about">About</a></div>
+        <div class="nav-option">
+            <details id="navigation-menu">
+                <summary><b>Posts</b></summary>
+                <nav>
+                    <ul>
+                        <li><a href="/posts/doctor-patient-power-dynamics">Doctor/patient power dynamics: rethinking care expectations in trans health</a></li>
+                        <li><a href="/posts/prog-study-does-progesterone-increase-breast-growth">Does progesterone increase breast growth? What the recent "prog study" tells us (and what it doesn't)</a></li>
+                        <li><a href="/posts/how-do-i-inject-my-diy-hormones">How do I inject my DIY hormones?!</a></li>
+                        <li><a href="/posts/a-short-explainer-on-risks-of-diy-hrt-gb">A Short Explainer on the Risks of DIY HRT - Great Britain Based Guide</a></li>
+                        <li><a href="/posts/pcos-transmascs-and-testosterone">PCOS, transmascs & testosterone</a></li>
+                        <li><a href="/posts/rethinking-progesterone-and-androgens">Rethinking Progesterone and Androgens</a></li>
+                        <li><a href="/posts/english-translation-of-a-method-for-preparing-estradiol">English Translation of "A Method for Preparing Estradiol"</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
+        <div class="nav-option feed">
+            <a href="/feed.xml">Feed</a>
+        </div>
+    </div>
+</div>
+<script>
+    const navigationMenu = document.getElementById('navigation-menu');
+    document.addEventListener('mousedown', (e) => {
+        const isClickOnSummary = e.target.closest('summary') !== null;
+        if (navigationMenu?.open && !isClickOnSummary && !navigationMenu.contains(e.target)) {
+            navigationMenu.open = false;
+        }
+    });
+</script>
+<div class="grid-area">
+    <div class="content-area">
+        <header id="title-block-header">
+                        <h1 class="title">Doctor/patient power dynamics:
+rethinking care expectations in trans health</h1>
+                                                    By  uriel   | published 2026-04-16  
+                        <!--<p class="author">uriel</p>
+                            <p class="date">2026-04-16</p>
+                -->
+                    </header>
+                    <div class="editors-box"><h2>
+Editor’s Note
+</h2>
+<p>
+This post is a translation of
+<a href="https://hackmd.io/@biyokea/sopk_transmasc_testo" target="_blank">Dynamiques
+de pouvoir médecins/patient·es : penser les attendus du soin en santé
+trans</a>, an edited version of a presentation the author delivered on
+March 28, 2026, introducing the afternoon for healthcare professionals
+at the
+<a href="https://centre-lgbtqia-65dee41b04bd2.assoconnect.com/collect/description/678458-x-3eme-colloque-du-reseau-transazur-28-mars-2026" target="_blank">3rd
+TransAzur seminar</a> in Nice, France.
+</p>
+<p>
+The theme of the presentation was “Les attendus du soin” (transl.
+“expectations of care”).
+</p>
+<p>
+The author would like to thank the WHSAH team for their help improving
+the text. Comments and feedback welcome! Send me an email:
+<code>whsah@proton.me</code>.
+</p>
+<p>
+Translation by alix, Ari, and uriel, with help from the
+<a href="https://huggingface.co/google/gemma-4-31B-it" target="_blank">gemma-4-31B-it</a>
+open-weight LLM, run entirely on local hardware. Our em-dashes are
+certified organic.
+</p></div>
+                            <nav id="TOC" role="doc-toc">
+            <h2>Contents</h2>
+            <ul>
+            <li><a
+            href="#respect-from-pronouns-to-recognizing-unequal-power-dynamics-in-care"
+            id="toc-respect-from-pronouns-to-recognizing-unequal-power-dynamics-in-care">Respect:
+            From Pronouns to Recognizing Unequal Power Dynamics in
+            Care</a></li>
+            <li><a
+            href="#humility-adopting-an-honest-stance-toward-ones-own-knowledge"
+            id="toc-humility-adopting-an-honest-stance-toward-ones-own-knowledge">Humility:
+            Adopting an Honest Stance Toward One’s Own
+            Knowledge</a></li>
+            <li><a
+            href="#decentering-the-cis-perspective-seeing-hrt-as-more-than-a-risk"
+            id="toc-decentering-the-cis-perspective-seeing-hrt-as-more-than-a-risk">Decentering
+            the Cis Perspective: Seeing HRT as More Than a Risk</a></li>
+            <li><a
+            href="#trans-broken-arm-syndrome-questioning-cissexist-biases"
+            id="toc-trans-broken-arm-syndrome-questioning-cissexist-biases">“Trans
+            Broken Arm Syndrome”: Questioning Cissexist Biases</a></li>
+            <li><a href="#conclusion"
+            id="toc-conclusion">Conclusion</a></li>
+            </ul>
+            </nav>
+                <h2 data-number="1"
+                id="respect-from-pronouns-to-recognizing-unequal-power-dynamics-in-care">Respect:
+                From Pronouns to Recognizing Unequal Power Dynamics in
+                Care</h2>
+                <p>Healthcare providers usually understand that
+                <strong>trans people should be treated with
+                respect</strong> when seeking care. This includes using
+                the correct name and pronouns, avoiding transphobic
+                remarks, and steering clear of intrusive questions about
+                our sexuality or genitals, among other things. But while
+                these basic communication practices are essential,
+                <strong>putting respect into practice involves the
+                deliberate forefronting of trans autonomy, beyond just
+                using the correct language</strong>.</p>
+                <p>To move beyond a liberal, depoliticized perspective
+                where simply respecting pronouns is seen as the primary
+                demand in healthcare, we need to <strong>think about the
+                power dynamics that organize the relationship between
+                doctors and patients</strong><a href="#fn1"
+                class="footnote-ref" id="fnref1"
+                role="doc-noteref"><sup>1</sup></a>.</p>
+                <p>First, we have to acknowledge that we are not equals;
+                <strong>doctors are in a position of power relative to
+                their patients</strong>. This is doubly true when the
+                patient is a trans person, and the doctor in question is
+                cis, which most healthcare providers are.</p>
+                <p>This power imbalance is manifest even in ordinary
+                healthcare interactions. For example, to access
+                transition-related medications, trans people must obtain
+                a prescription from a doctor—which typically means
+                putting a significant amount of control over their
+                transition in the hands of a cis person. This can be
+                especially distressing to patients who feel like they’re
+                “losing precious time” waiting for access to treatment,
+                and notably to minors currently undergoing an undesired
+                puberty. This is a structural issue with healthcare as a
+                system that no individual provider can fix. However, one
+                can take it into account in their practice, and that is
+                what I would like to discuss.</p>
+                <p>One very simple way to help alleviate this imbalance
+                is to <strong>write HRT prescriptions that are valid for
+                as long as possible</strong>. That way, if a patient
+                doesn’t feel safe or comfortable with you as their
+                doctor (for instance, after expressing a disagreement),
+                they don’t need to be forced to keep coming back by a
+                rapidly expiring prescription, and have more freedom to
+                explore alternatives.</p>
+                <p>Keeping in mind this imbalance is also particularly
+                essential in situations where you <strong>receive a
+                request you personally disagree with</strong> from a
+                patient, or at the very least are not convinced of. For
+                example, a request for progesterone, or a follow-up
+                blood test at one month instead of the usual three. True
+                investment in trans liberation means
+                <strong>intentionally refusing to act as a
+                gatekeeper</strong> in such situations, and
+                <strong>practicing trust in your patients’ articulations
+                of their own needs.</strong> That means granting those
+                requests by default. These practices avoid reinforcing
+                the subordination of the patient to the doctor. While
+                it’s true that issuing a prescription confers a certain
+                level of responsibility to the prescriber, the examples
+                I’ve chosen here are deliberately harmless. That being
+                said, less obviously risk-free situations should also be
+                approached with the same mindset<a href="#fn2"
+                class="footnote-ref" id="fnref2"
+                role="doc-noteref"><sup>2</sup></a>.</p>
+                <p>Finally, a critical way to account for the
+                aforementioned dynamic is to <strong>support people’s
+                self-medication</strong> via a harm-reduction approach
+                (for example, by prescribing blood tests), without
+                demanding that the person switch to a prescribed HRT
+                regimen or stop HRT entirely. This is because
+                self-medication (or DIY HRT) is a powerful tool for
+                emancipation from the biomedical power exercised over
+                trans people. Even if it has its limits, supporting it
+                and not penalizing it is crucial.</p>
+                <h2 data-number="2"
+                id="humility-adopting-an-honest-stance-toward-ones-own-knowledge">Humility:
+                Adopting an Honest Stance Toward One’s Own
+                Knowledge</h2>
+                <p>Whether we like it or not, a doctor’s word carries a
+                different weight than that of a mere mortal. Doctors are
+                often taken at their word without being asked for
+                explanations, let alone scientific references. Yet, they
+                are frequently wrong; they’re human, after all. The
+                difference is that when a doctor is wrong, it is treated
+                as a fluke and quickly forgotten. But when a trans
+                person is wrong while advising another, it’s immediately
+                seized upon as the proof we’ve been waiting for to
+                <strong>dismiss and delegitimize community
+                knowledge</strong>.</p>
+                <p>Doing mutual aid, when I find myself explaining to
+                someone that their doctor is wrong, or even abusive, I
+                have to convince them, often by explaining my reasoning
+                and citing scientific literature. Conversely, a doctor
+                never has to make that effort when they contradict
+                something I said in front of their patient during an
+                appointment. While I have no problem explaining and
+                citing sources (in fact, I think it’s critically
+                important for everyone), this double standard is a
+                problem. In trans health, this disparity is not
+                justified by a difference in the quantity or severity of
+                errors made. That’s a polite way to say that the average
+                doctor, who is not trained in trans issues, can make a
+                significant number of mistakes. Even among doctors with
+                a large trans patient base, a profound lack of
+                competence is often evident.</p>
+                <p>Therefore, it is important to <strong>exercise
+                humility</strong> to account for these realities. When,
+                as a doctor, you don’t know something—whether because of
+                the limitations of the scientific literature or because
+                of your own lack of familiarity with that literature
+                and/or trans experiential knowledge—it is better to
+                simply say you don’t know. Taking the previous example
+                of a patient asking why hormonal monitoring is done
+                every three months rather than sooner: rather than
+                inventing on the spot that “hormone levels aren’t
+                stabilized before then”<a href="#fn3"
+                class="footnote-ref" id="fnref3"
+                role="doc-noteref"><sup>3</sup></a>, it is better to
+                answer that you don’t really know, and that you’ve
+                always done it that way without questioning it. The goal
+                is not to shirk your responsibility to provide reliable
+                information, but to <strong>make your knowledge and its
+                limits visible, rather than unintentionally maintaining
+                an aura of omniscience which, in the end, only hinders
+                access to knowledge and the empowerment of trans
+                people</strong>. It is a matter of transparency and
+                honesty<a href="#fn4" class="footnote-ref" id="fnref4"
+                role="doc-noteref"><sup>4</sup></a>.</p>
+                <p>Similarly, consider the example of refusing a
+                patient’s request. If you refuse a request because you
+                don’t feel competent in a specific area and don’t want
+                to take responsibility for a prescription, that is
+                understandable, but you must say so clearly. For
+                instance, it is better to say, “No, I don’t prescribe
+                bicalutamide because I’ve heard about a hepatic risk and
+                I’m not familiar enough with the subject,” rather than,
+                “No, I don’t prescribe bicalutamide because it’s too
+                dangerous for the liver.” The former does not exempt you
+                from working to expand your expertise to encompass
+                things that are frequently requested, but it
+                <strong>avoids sabotaging the person’s future care
+                pathway</strong>. In the first case, the person can do
+                their own research, return with information on
+                bicalutamide, or go elsewhere if it’s important to them;
+                in the second, you’ve given them inaccurate information,
+                making it harder for them to move forward. Even if you
+                do know the subject well, for instance if you genuinely
+                believe bicalutamide is too hepatotoxic to prescribe
+                based on having explored the literature<a href="#fn5"
+                class="footnote-ref" id="fnref5"
+                role="doc-noteref"><sup>5</sup></a>, this does not
+                exempt you from the importance of providing context to
+                your recommendations. Providing detailed information to
+                justify your refusal, so that your patient understands
+                how you arrived at your conclusion, shows that you are
+                taking their request and their ability to understand the
+                subject seriously.</p>
+                <p>Additionaly, humility allows you to recognize that
+                <strong>community and experiential knowledge benefits
+                patients in ways that medical providers can’t</strong>.
+                It is critical not to delegitimize this knowledge, as
+                doing so can prevent your trans patients from accessing
+                vital resources.</p>
+                <h2 data-number="3"
+                id="decentering-the-cis-perspective-seeing-hrt-as-more-than-a-risk">Decentering
+                the Cis Perspective: Seeing HRT as More Than a Risk</h2>
+                <p>Another significant power imbalance in trans
+                healthcare stems from the fact that <strong>in most
+                research, trans experiences are conceptualized by cis
+                people or filtered through the lens of cis
+                priorities.</strong> A particularly salient example is
+                the way <strong>HRT is systematically framed as a
+                risk</strong> in medical literature. This position is
+                illustrated in discussions regarding the cardiovascular
+                health of trans people. This particular topic, which is
+                rarely seen as a priority by trans people themselves<a
+                href="#fn6" class="footnote-ref" id="fnref6"
+                role="doc-noteref"><sup>6</sup></a>, is wildly
+                overrepresented in trans health literature and is always
+                framed by what cis people feel is the potential risk
+                posed by HRT. In actuality, it’s well established that
+                this risk is low, and that a substantial part of the
+                observed increase in cardiovascular risks for trans
+                people—which can be significant, especially for trans
+                women—is <strong>linked to unfavorable socio-economic
+                conditions and minority stress</strong><a href="#fn7"
+                class="footnote-ref" id="fnref7"
+                role="doc-noteref"><sup>7</sup></a><a href="#fn8"
+                class="footnote-ref" id="fnref8"
+                role="doc-noteref"><sup>8</sup></a>. Additionally,
+                restricting access to GAHT and broader transition
+                services has been shown to cause preventable suicide
+                deaths among trans patients<a href="#fn9"
+                class="footnote-ref" id="fnref9"
+                role="doc-noteref"><sup>9</sup></a>—a risk that cannot
+                be dismissed.</p>
+                <p>Beyond research, approaching HRT primarily as a
+                potential health risk also creates problems in clinical
+                practice. The risks of HRT are often presented by cis
+                healthcare providers in a decontextualized and frankly
+                alarmist manner. The fact that providers feel the need
+                to discuss these risks (which are generally minor) at
+                length, absent any specific request from the patient<a
+                href="#fn10" class="footnote-ref" id="fnref10"
+                role="doc-noteref"><sup>10</sup></a>, and in contrast to
+                most other medications with a similar or even more
+                serious risk profile, should be cause for reflection.
+                This isn’t to say that risks should never be discussed,
+                but discussing only the risks (and never the benefits,
+                unlike what we would do for any other treatment) and
+                failing to adequately provide context for them is a form
+                of <strong>hijacking informed consent</strong>. Just a
+                reminder: the idea behind informed consent is not to
+                list every conceivable risk because you feel the need to
+                cover your own ass (but rather to provide adequate,
+                pertinent, information as to a treatment so a person can
+                understand and consent (or not) to it. Such behavior
+                belies a lack of trust in the ability of trans people to
+                fully and rationally comprehend the consequences of the
+                treatments we seek out.</p>
+                <p>This conceptualization of HRT as a risk, or as
+                something that isn’t entirely “safe” (contrary to all
+                medical evidence), also manifests in how HRT is
+                prescribed. For instance, estradiol is frequently
+                started at doses too low to be effective, and then
+                increased too slowly—without any scientific basis or
+                justification for this approach. This is also seen in
+                HRT monitoring, which includes not only hormone level
+                measurements but also often completely superfluous tests
+                (prolactin, fasting blood glucose or lipid panels every
+                three months for non-diabetics, TSH, liver enzymes,
+                etc.)<a href="#fn11" class="footnote-ref" id="fnref11"
+                role="doc-noteref"><sup>11</sup></a>. These tests are
+                not useful—studies show these parameters are not
+                typically affected by HRT, and they aren’t measured this
+                frequently in the general population, or even in
+                cisgender people on the same types of medication.
+                Forcing them upon trans patients over-medicalizes the
+                process of obtaining HRT, and can make blood draws
+                unnecessarily burdensome (by requiring fasting, for
+                example). Furthermore, they inevitably create a risk of
+                false positives and overdiagnosis <a href="#fn12"
+                class="footnote-ref" id="fnref12"
+                role="doc-noteref"><sup>12</sup></a>.</p>
+                <h2 data-number="4"
+                id="trans-broken-arm-syndrome-questioning-cissexist-biases">“Trans
+                Broken Arm Syndrome”: Questioning Cissexist Biases</h2>
+                <p>One of the most serious consequences of the cis
+                hyperfocus on HRT risks is the paradigm known in the
+                community as “trans broken arm syndrome.” This refers to
+                the tendency of healthcare providers to attribute
+                unrelated medical problems to a person’s HRT or
+                transition<a href="#fn13" class="footnote-ref"
+                id="fnref13" role="doc-noteref"><sup>13</sup></a>. This
+                results in a twofold neglect of trans health and
+                wellbeing, as the patient is both denied appropriate
+                medical care for the real cause of the problem, and
+                pressured to pause or reverse their transition. Trans
+                broken arm syndrome can be further extended to encompass
+                the failure of healthcare providers to account for the
+                impact of systemic transphobia on a patient’s health,
+                even though this has been repeatedly shown to be a major
+                social determinant of health for trans people. Concrete
+                instances of this are commonplace yet rarely recognized
+                as such.</p>
+                <p>For example, fatigue is sometimes attributed to HRT,
+                even when the patient’s hormone levels are perfectly
+                within expected range. Fatigue is a broad and
+                multifactorial issue, which can stem from many different
+                underlying problems—but as a result of trans broken arm
+                syndrome, it often ends up minimized and normalized when
+                it affects trans people. Another example is chronic
+                pelvic pain. This is common in the general population,
+                especially among cis women, and is often poorly managed
+                or ignored. When a transmasculine person on testosterone
+                experiences this type of pain, however, it is very often
+                almost immediately attributed to testosterone. Yet,
+                evidence of a causal link between testosterone and
+                new-onset pelvic pain is tenuous at best; such pain is
+                common in people not taking testosterone, and
+                pre-existing pelvic pain is generally relieved by
+                testosterone. Behind this misattribution seems to lie a
+                form of <strong>cissexism</strong> that views
+                testosterone is an ontologically masculine hormone and
+                therefore necessarily harmful to the ovaries or uterus,
+                organs seen as ontologically feminine. This idea is
+                reflected in the long-held belief that a hysterectomy
+                should be mandatory after five years of testosterone to
+                avoid vaguely defined uterine ailments (cancer, “organ
+                decay,” etc.).</p>
+                <p>Consciously avoiding these cissexist lines of
+                thinking is essential to providing quality healthcare to
+                trans people. Start by asking yourself: as a doctor, how
+                would I treat a cis person with a similar problem? Would
+                I expect to see these health problems in a cis person
+                taking these hormones? And crucially, always check
+                whether your intuitions, which are not immune to the
+                biases of societal cissexism, are actually supported by
+                literature, and reflect on how these biases may impact
+                your patients’ care. Avoiding trans broken arm syndrome
+                means ordering diagnostic tests, referring to
+                specialists, and proposing treatments, rather than
+                stopping at the easy explanation that HRT is to blame.
+                It means examining and taking accountability for the
+                urge to compel a patient to stop HRT, or imply that it’s
+                expected for them to be in pain because they chose to
+                transition. In the case of fatigue, alternative
+                explanations, such as the recognized impact of repeated
+                COVID-19 infections, should be explored. These
+                reflections do apply to more serious health issues (for
+                instance, the role of HRT versus that of COVID-19 can
+                also be questioned in the case of a stroke in a young
+                person).</p>
+                <h2 data-number="5" id="conclusion">Conclusion</h2>
+                <p>To summarize, while the baseline expectation in trans
+                healthcare is <strong>respectful communication</strong>,
+                we should also demand:</p>
+                <ul>
+                <li>accounting for the <strong>power imbalance</strong>
+                in the doctor-patient relationship;</li>
+                <li><strong>humility</strong> and honesty regarding
+                one’s own knowledge;</li>
+                <li>conceptualizing <strong>transition beyond its
+                supposed risks</strong>;</li>
+                <li>accounting for <strong>cissexist biases</strong> in
+                clinical decision-making;</li>
+                <li>and all the practical applications that follow from
+                these points.</li>
+                </ul>
+                <p>A bit of housekeeping to conclude: there are, of
+                course, material limits to applying these principles,
+                not least the time available. My goal is also not to set
+                the bar so high that it discourages the few doctors who
+                are truly invested in promoting trans health, especially
+                since providing trans healthcare can be an unprofitable
+                and politically fraught endeavor. This text may come
+                across as somewhat fragmentary and critical, but I do
+                want to give credit to positive behaviors and
+                initiatives. My goal is simply to offer a few avenues
+                for reflection and improvement for the doctors who read
+                this. I hope I’ve been able to achieve that :)</p>
+                <section id="footnotes"
+                class="footnotes footnotes-end-of-document"
+                role="doc-endnotes">
+                <hr />
+                <ol>
+                <li id="fn1"><p>Jacobsen, K. (2024). Prioritizing Trans
+                Autonomy over Medical Authority in Gender-Affirming
+                Care: The Role of Risk and Uncertainty. Bulletin of
+                Applied Transgender Studies, 3(1–2), 1–19. <a
+                href="https://doi.org/10.57814/eay5-ey57">https://doi.org/10.57814/eay5-ey57</a><a
+                href="#fnref1" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn2"><p>For example: prescribing testosterone
+                during a known pregnancy, prescribing 5-alpha reductase
+                inhibitors (DHT blockers) despite their poorly
+                characterized psychiatric risks, prescribing oral
+                minoxidil for hair growth, etc.<a href="#fnref2"
+                class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+                <li id="fn3"><p>Which is false; see:<br />
+                biyokea. (2024). Pourquoi attendre 1 mois et pas plus
+                pour une prise de sang après un changement de dosage ?
+                [Why wait 1 month and not more for a blood test after a
+                dosage change ?] <a
+                href="https://hackmd.io/@biyokea/pds1mois">https://hackmd.io/<span
+                class="citation"
+                data-cites="biyokea/pds1mois">@biyokea/pds1mois</span></a>.<a
+                href="#fnref3" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn4"><p>In this regard, there is also value in
+                making the decisions one makes for their patients
+                visible and explicit (for example: preferring
+                monotherapy and not spontaneously suggesting
+                anti-androgens; preferring the transdermal route and not
+                spontaneously offering oral estradiol as an option).<a
+                href="#fnref4" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn5"><p>An assessment that, in my view, would
+                generally be unjustified; see for example:<br />
+                Aly. (2020). Bicalutamide and its Adoption by the
+                Medical Community for Use in Transfeminine Hormone
+                Therapy. Transfeminine Science. <a
+                href="https://transfemscience.org/articles/bica-adoption">https://transfemscience.org/articles/bica-adoption</a><a
+                href="#fnref5" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn6"><p>Rytz, C. L., Pattar, B. S. B., Mizen, S.
+                J., Lieb, P., Parsons Leigh, J., Saad, N., Dumanski, S.
+                M., Beach, L. B., Marshall, Z., Newbert, A. M., Peace,
+                L., &amp; Ahmed, S. B. (2024). Transgender and Nonbinary
+                Individuals’ Perceptions Regarding Gender-Affirming
+                Hormone Therapy and Cardiovascular Health: A Qualitative
+                Study. Circulation: Cardiovascular Quality and Outcomes,
+                17(9). <a
+                href="https://doi.org/10.1161/CIRCOUTCOMES.124.011024">https://doi.org/10.1161/CIRCOUTCOMES.124.011024</a><a
+                href="#fnref6" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn7"><p>Flentje, A., Sunder, G., &amp; Tebbe, E.
+                (2025). Minority stress in relation to biological
+                outcomes among sexual and gender minority people: A
+                systematic review and update. Journal of Behavioral
+                Medicine, 48(1), 22–42. <a
+                href="https://doi.org/10.1007/s10865-024-00539-6">https://doi.org/10.1007/s10865-024-00539-6</a><a
+                href="#fnref7" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn8"><p>Streed, C. G., Harfouch, O., Marvel, F.,
+                Blumenthal, R. S., Martin, S. S., &amp; Mukherjee, M.
+                (2017). Cardiovascular Disease Among Transgender Adults
+                Receiving Hormone Therapy. Annals of Internal Medicine,
+                167(4), 256–267. <a
+                href="https://doi.org/10.7326/M17-0577">https://doi.org/10.7326/M17-0577</a><a
+                href="#fnref8" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn9"><p>Cooney, E. E., Muschialli, L., Yeh, P.
+                T., Allen, C. L., Connolly, D. J., Kaptchuk, R. P.,
+                Kennedy, K. S., Wong, B., &amp; Kennedy, C. E. (2025).
+                Provision of gender-affirming care for trans and
+                gender-diverse adults: A systematic review of health and
+                quality of life outcomes, values and preferences, and
+                costs. eClinicalMedicine, 88, 103458. <a
+                href="https://doi.org/10.1016/j.eclinm.2025.103458">https://doi.org/10.1016/j.eclinm.2025.103458</a><a
+                href="#fnref9" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn10"><p>It should also be noted that even when
+                a request for information about HRT risks comes from a
+                trans patient, that request is not “neutral.” Trans
+                people are also subjected to and influenced by alarmist
+                narratives on the topic. While it is, of course, crucial
+                to answer these questions about risks honestly, the fact
+                that they come from a trans person rather than a doctor
+                does not exempt the provider from questioning why the
+                question is being asked. This implies, for example,
+                reminding the patient of the role of factors other than
+                HRT in trans health. This reminder doesn’t have to be
+                purely philosophical and can lead to concrete
+                recommendations, such as suggesting they connect with
+                trans communities, as this can be a factor in resilience
+                against minority stress.<a href="#fnref10"
+                class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+                <li id="fn11"><p>This is about the general case, some
+                exception applies. For instance, people on bicalutamide
+                should get their liver enzymes monitored periodically.<a
+                href="#fnref11" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn12"><p>On this subject, see the example of
+                prolactin detailed in the article<br />
+                biyokea. (2024). Prolactine et THS. [Prolactin and HRT].
+                <a
+                href="https://hackmd.io/@biyokea/prolactine">https://hackmd.io/<span
+                class="citation"
+                data-cites="biyokea/prolactine">@biyokea/prolactine</span></a><a
+                href="#fnref12" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn13"><p>Trans people also sometimes have a
+                tendency to apply the “Trans Broken Arm Syndrome” to
+                themselves. The consequences are obviously different
+                than when this misattribution comes from healthcare
+                professionals, but it remains potentially harmful. As a
+                doctor, one can encourage trans people to question this
+                attribution, which is often linked to various
+                internalized transphobic biases—without, of course,
+                imposing one’s own view.<a href="#fnref13"
+                class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+                </ol>
+                </section>
+    </div>
+    </div>
+</body>
+</html>

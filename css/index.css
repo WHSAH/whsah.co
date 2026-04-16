@@ -22,7 +22,8 @@ body {
   padding-bottom: 10rem;
 }
 
-.editors-box {
+.editors-box,
+.info {
   margin-top: 2rem;
   padding: 0.2rem 1rem;
   background: color-mix(in srgb, Canvas, CanvasText 5%);
@@ -62,7 +63,9 @@ body {
   font-size: 0.8em;
 }
 
-.citation-backlinks {
+.citation-backlinks,
+.footnote-back {
+  font-size: 0.8em;
   margin-inline-start: 0.5em;
   margin-inline-end: 0.5em;
 }
@@ -305,6 +308,11 @@ h6 {
   font-weight: normal;
 }
 
+h2,
+h3 {
+  font-weight: bold;
+}
+
 h4,
 h5,
 h6 {
@@ -358,7 +366,8 @@ kbd,
 samp {
   color: CanvasText;
   font-family: monospace;
-  font-size: 0.8rem;
+  /* font-size: 1.1rem; */
+  font-size: 80%;
 }
 
 pre {
@@ -523,7 +532,8 @@ table td {
   }
 
   .citation-backlinks,
-  .citation-tooltip {
+  .citation-tooltip,
+  .footnote-back {
     display: none !important;
   }
 
@@ -540,6 +550,10 @@ table td {
 
   #navigation-container {
     display: none !important;
+  }
+
+  code {
+    font-size: 10pt;
   }
 
   pre,
@@ -595,4 +609,5 @@ table td {
   h5 {
     break-after: avoid !important;
   }
+
 }
