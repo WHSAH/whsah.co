@@ -9,8 +9,8 @@
   <meta name="description" content="Lorem ipsum and so forth" />
   <meta name="publisher" content="WHSAH" />
 
-  <meta property="og:description" content="Lorem ipsum and so forth" />
   <meta property="og:title" content="Title of my article" />
+  <meta property="og:description" content="Lorem ipsum and so forth" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="WHSAH" />
   <meta property="og:type" content="article" />
@@ -19,9 +19,9 @@
   <meta name="dcterms.creator" content="alix" />
   <meta name="dcterms.creator" content="my alter ego" />
   <meta name="dcterms.creator" content="the demon on my shoulder" />
-  <meta name="dcterms.abstract" content="Lorem ipsum and so forth" />
   <meta name="dcterms.title" content="Title of my article" />
   <meta name="dcterms.date" content="2026-04-18" />
+  <meta name="dcterms.abstract" content="Lorem ipsum and so forth" />
 
   <meta name="citation_author" content="alix" />
   <meta name="citation_author" content="my alter ego" />
@@ -218,8 +218,9 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
             <li><a href="#yaml-header-format" id="toc-yaml-header-format"><span class="toc-section-number">1</span> YAML header format</a></li>
             <li><a href="#how-to-create-a-new-post" id="toc-how-to-create-a-new-post"><span class="toc-section-number">2</span> How to create a new post</a></li>
             <li><a href="#my-post-uses-images-and-other-somesuches-you-inquire" id="toc-my-post-uses-images-and-other-somesuches-you-inquire"><span class="toc-section-number">3</span> “My post uses images and other somesuches”, you inquire</a></li>
-            <li><a href="#but-alix-i-hear-you-ask-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography" id="toc-but-alix-i-hear-you-ask-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography"><span class="toc-section-number">4</span> “But alix”, I hear you ask, “my post also uses many fancy citations so I need a bibliography”</a></li>
-            <li><a href="#but-aaliiiix-whiningly-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do" id="toc-but-aaliiiix-whiningly-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="toc-section-number">5</span> “But aaliiiix”, whiningly, “my article uses fancy CSS with cool interactive buttons, what do?”</a></li>
+            <li><a href="#but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography" id="toc-but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography"><span class="toc-section-number">4</span> “But alix”, I hear you say, “my post also uses many fancy citations so I need a bibliography”</a></li>
+            <li><a href="#but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do" id="toc-but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="toc-section-number">5</span> “But aaliiiix”, I hear you whine, “my article uses fancy CSS with cool interactive buttons, what do?”</a></li>
+            <li><a href="#housekeeping" id="toc-housekeeping"><span class="toc-section-number">6</span> Housekeeping</a></li>
             <li><a href="#bibliography" id="toc-bibliography">Bibliography</a></li>
             </ul>
             </nav>
@@ -251,10 +252,9 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
                 <h2 data-number="2" id="how-to-create-a-new-post"><span class="header-section-number">2</span> How to create a new post</h2>
                 <ul>
                 <li>Create a sub-folder in <code>./md/posts/</code> with a simple kebab-case name based on the title. For example for this template this would be <code>/md/posts/title-of-my-article/</code>. The name can/should be shortened if the title is too long.</li>
-                <li>Create an <code>index.md</code> file inside the folder containing the above YAML block (without the comments, but it’s also included in the original source file <code>/md/index.md-template.md</code>.</li>
-                <li>When you run the <code>build.sh</code> script calls the <code>/src/render.sh</code> script once for each subfolder of <code>/md/posts/</code>). Pandoc renders <code>index.md</code> into <code>index.html</code> and moves it to <code>/output/posts/title-of-my-article/index.html</code>.</li>
+                <li>Create an <code>index.md</code> file inside the folder containing the above YAML block. You can find a version without comments (don’t leave any in the YAML block) in the source file <code>/md/posts/title-of-my-article/index.md</code>.</li>
+                <li>When you run the <code>build.sh</code> script calls the <code>/src/render.sh</code> script once for each subfolder of <code>/md/posts/</code>. Pandoc renders <code>index.md</code> into <code>index.html</code> and moves it to <code>/output/posts/title-of-my-article/index.html</code>.</li>
                 <li>Note that you can create additional subfolders with their own <code>index.md</code> if your post is split into more than more page, those will be rendered as well. The <code>build.sh</code> scripts simply recursively traverses all subfolder inside <code>/md/posts/</code> and calls <code>render.sh</code> on every <code>index.md</code> it encounters.</li>
-                <li>Move everything inside <code>/output/*</code> to the root of your website directory, commit and push to GitHub Pages (or whatever else). Your new article can be accessed at <code>https://whasah.co/posts/title-of-my-article/</code>.</li>
                 </ul>
                 <h2 data-number="3" id="my-post-uses-images-and-other-somesuches-you-inquire"><span class="header-section-number">3</span> “My post uses images and other somesuches”, you inquire</h2>
                 <p>Worry not,</p>
@@ -262,7 +262,7 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
                 <li>Create a subfolder with the same name in the static asset folder and put all your assets inside it. In our case this would be <code>/static/posts/title-of-my-article/</code>.</li>
                 <li>All files and subdirectories you put in that folder will end up in the same folder alongside <code>index.html</code> in the final output.</li>
                 </ul>
-                <h2 data-number="4" id="but-alix-i-hear-you-ask-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography"><span class="header-section-number">4</span> “But alix”, I hear you ask, “my post also uses many fancy citations so I need a bibliography”</h2>
+                <h2 data-number="4" id="but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography"><span class="header-section-number">4</span> “But alix”, I hear you say, “my post also uses many fancy citations so I need a bibliography”</h2>
                 <p>Sure thing, we love a good bibliography,</p>
                 <ul>
                 <li>When the render script detects the presence of the bibtex file <code>/md/posts/title-of-my-article/references.bib</code>, it calls pandoc with the <code>--citeproc</code> option which will automatically render a Bibliography section after the main text, but before the footnotes with nice links and a citation tooltip function and so forth.</li>
@@ -275,7 +275,7 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
                 <li>Note that WHSAH uses APA style. Let’s self cite, as is tradition <span class="citation" data-cites="alix_title_2026">(<a href="#ref-alix_title_2026" role="doc-biblioref"><span class="nocase">alix et al.</span>, 2026</a>)</span>.</li>
                 <li>See <a href="https://pandoc.org/demo/example33/8.20-citation-syntax.html#citation-syntax" class="uri">https://pandoc.org/demo/example33/8.20-citation-syntax.html#citation-syntax</a> for additional options.</li>
                 </ul>
-                <h2 data-number="5" id="but-aaliiiix-whiningly-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="header-section-number">5</span> “But aaliiiix”, whiningly, “my article uses fancy CSS with cool interactive buttons, what do?”</h2>
+                <h2 data-number="5" id="but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="header-section-number">5</span> “But aaliiiix”, I hear you whine, “my article uses fancy CSS with cool interactive buttons, what do?”</h2>
                 <p>Put all your css files in the static asset folder of your article and list them under the <code>custom-css</code> tag in the YAML header. Same for javascript files, list them under the <code>custom-js</code> tag. In our case, this will tell pandoc to include the following in the html header:</p>
                 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!-- ... --&gt;</span></span>
@@ -286,6 +286,15 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!-- ... --&gt;</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span></code></pre></div>
                 <p>Make sure all your stylesheets and scripts are located in the static asset folder <code>/static/posts/title-of-my-article/</code>.</p>
+                <h2 data-number="6" id="housekeeping"><span class="header-section-number">6</span> Housekeeping</h2>
+                <p>Once this is all done, make sure to</p>
+                <ul class="task-list">
+                <li><label><input type="checkbox" />Add link to the landing page <code>/md/index.md</code></label></li>
+                <li><label><input type="checkbox" />Add link to the navigation bar <code>/src/navigation.html</code></label></li>
+                <li><label><input type="checkbox" />Create a new entry in the Atom feed <code>/static/feed.xml</code> and use a unique random UUID generated for example with python’s <code>uuid.uuid4()</code>.</label></li>
+                <li><label><input type="checkbox" />Run <code>build.sh</code> from the root of <code>website-source</code>.</label></li>
+                <li><label><input type="checkbox" />Move everything inside <code>/output/*</code> to the root of your website directory, commit and push to GitHub Pages (or whatever else). Your new article can be accessed at <code>https://whsah.co/posts/title-of-my-article/</code>.</label></li>
+                </ul>
                 <h2 class="unnumbered" id="bibliography">Bibliography</h2>
                 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
                 <div id="ref-alix_title_2026" class="csl-entry" role="listitem">
