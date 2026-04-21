@@ -8,6 +8,8 @@
 <meta name="author" content="alix, my alter ego, and the demon on my shoulder" />
   <meta name="description" content="Lorem ipsum and so forth" />
   <meta name="publisher" content="WHSAH" />
+  <meta name="robots" content="noindex" />
+  <meta name="robots" content="noarchive" />
 
   <meta property="og:title" content="Title of my article" />
   <meta property="og:description" content="Lorem ipsum and so forth" />
@@ -200,7 +202,7 @@
         <header id="title-block-header">
                         <h1 class="title">Title of my article</h1>
                                                     By alix, my alter ego, and the demon on my shoulder<br />
-                                        published 2026-04-18  | last updated 2047-04-18 
+                                        published 2026-04-18  | last updated 2026-04-21 
                                         <div class="abstract">
                 <div class="abstract-title"><h2>Abstract</h2></div>
                 <p>Lorem ipsum and so forth</p>
@@ -220,7 +222,8 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
             <li><a href="#my-post-uses-images-and-other-somesuches-you-inquire" id="toc-my-post-uses-images-and-other-somesuches-you-inquire"><span class="toc-section-number">3</span> “My post uses images and other somesuches”, you inquire</a></li>
             <li><a href="#but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography" id="toc-but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography"><span class="toc-section-number">4</span> “But alix”, I hear you say, “my post also uses many fancy citations so I need a bibliography”</a></li>
             <li><a href="#but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do" id="toc-but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="toc-section-number">5</span> “But aaliiiix”, I hear you whine, “my article uses fancy CSS with cool interactive buttons, what do?”</a></li>
-            <li><a href="#housekeeping" id="toc-housekeeping"><span class="toc-section-number">6</span> Housekeeping</a></li>
+            <li><a href="#i-dont-like-robots" id="toc-i-dont-like-robots"><span class="toc-section-number">6</span> “I don’t like robots”</a></li>
+            <li><a href="#housekeeping" id="toc-housekeeping"><span class="toc-section-number">7</span> Housekeeping</a></li>
             <li><a href="#bibliography" id="toc-bibliography">Bibliography</a></li>
             </ul>
             </nav>
@@ -248,7 +251,10 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">custom-js</span><span class="kw">:</span><span class="co"> # optional, same concept as custom-css, but for scripts</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> magic.js</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> arcane.js</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">robots</span><span class="kw">:</span><span class="co"> # optional, include robots meta tags</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noindex</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noarchive</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
                 <h2 data-number="2" id="how-to-create-a-new-post"><span class="header-section-number">2</span> How to create a new post</h2>
                 <ul>
                 <li>Create a sub-folder in <code>./md/posts/</code> with a simple kebab-case name based on the title. For example for this template this would be <code>/md/posts/title-of-my-article/</code>. The name can/should be shortened if the title is too long.</li>
@@ -276,7 +282,7 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
                 <li>See <a href="https://pandoc.org/demo/example33/8.20-citation-syntax.html#citation-syntax" class="uri">https://pandoc.org/demo/example33/8.20-citation-syntax.html#citation-syntax</a> for additional options.</li>
                 </ul>
                 <h2 data-number="5" id="but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="header-section-number">5</span> “But aaliiiix”, I hear you whine, “my article uses fancy CSS with cool interactive buttons, what do?”</h2>
-                <p>Put all your css files in the static asset folder of your article and list them under the <code>custom-css</code> tag in the YAML header. Same for javascript files, list them under the <code>custom-js</code> tag. In our case, this will tell pandoc to include the following in the html header:</p>
+                <p>Put all your css files in the static asset folder of your article and list them under the <code>custom-css</code> item in the YAML header. Same for javascript files, list them under the <code>custom-js</code> item. In our case, this will tell pandoc to include the following in the html header:</p>
                 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!-- ... --&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> rel</span><span class="op">=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;bespoke.css&quot;</span><span class="ot"> </span><span class="dt">/&gt;</span></span>
@@ -286,7 +292,19 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!-- ... --&gt;</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span></code></pre></div>
                 <p>Make sure all your stylesheets and scripts are located in the static asset folder <code>/static/posts/title-of-my-article/</code>.</p>
-                <h2 data-number="6" id="housekeeping"><span class="header-section-number">6</span> Housekeeping</h2>
+                <h2 data-number="6" id="i-dont-like-robots"><span class="header-section-number">6</span> “I don’t like robots”</h2>
+                <p>and that’s valid.</p>
+                <p>You can add meta tags kindly asking robots to do or not do certain things. No guarantee though, its barely more than a suggestion to them.</p>
+                <p>To do so, include the <code>robots</code> item in the YAML block and list tags of your choosing. Common ones are,</p>
+                <ul>
+                <li><code>noindex</code>, instructs search engines not to index the page.</li>
+                <li><code>noimageindex</code>, instructs search engines not to index images on the page.</li>
+                <li><code>nofollow</code>, instructs search engines not to follow any links on the page.</li>
+                <li><code>noarchive</code>, prevents a cached copy of the page from being made, honored by archive.org (I think).</li>
+                <li><code>nosnippet</code>, prevents a description from being shown in the search results.</li>
+                </ul>
+                <p>For more <code>robots</code> tag options, see <a href="https://zhead.dev/meta/robots" class="uri">https://zhead.dev/meta/robots</a>.</p>
+                <h2 data-number="7" id="housekeeping"><span class="header-section-number">7</span> Housekeeping</h2>
                 <p>Once this is all done, make sure to</p>
                 <ul class="task-list">
                 <li><label><input type="checkbox" />Add link to the landing page <code>/md/index.md</code></label></li>
