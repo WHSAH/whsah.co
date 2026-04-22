@@ -5,46 +5,19 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
-<meta name="author" content="alix, my alter ego, and the demon on my shoulder" />
-  <meta name="description" content="Lorem ipsum and so forth" />
-  <meta name="publisher" content="WHSAH" />
-  <meta name="robots" content="noindex" />
+<meta name="robots" content="noindex" />
+  <meta name="robots" content="nofollow" />
   <meta name="robots" content="noarchive" />
+  <meta name="robots" content="nosnippet" />
+  <meta name="author" content="alix, my alter ego, and the demon on my shoulder" />
+  <meta name="publisher" content="WHSAH" />
 
   <meta property="og:title" content="Title of my article" />
-  <meta property="og:description" content="Lorem ipsum and so forth" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="WHSAH" />
-  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Lorem ipsum and so forth" />
   <meta property="og:url" content="https://whsah.co/posts/title-of-my-article/" />
-
-  <meta name="dcterms.creator" content="alix" />
-  <meta name="dcterms.creator" content="my alter ego" />
-  <meta name="dcterms.creator" content="the demon on my shoulder" />
-  <meta name="dcterms.title" content="Title of my article" />
-  <meta name="dcterms.date" content="2026-04-18" />
-  <meta name="dcterms.abstract" content="Lorem ipsum and so forth" />
-
-  <meta name="citation_author" content="alix" />
-  <meta name="citation_author" content="my alter ego" />
-  <meta name="citation_author" content="the demon on my shoulder" />
-  <meta name="citation_title" content="Title of my article" />
-  <meta name="citation_publication_date" content="2026-04-18" />
-  <meta name="citation_journal_title" content="WHSAH" />
-  <meta name="citation_fulltext_html_url" content="https://whsah.co/posts/title-of-my-article/" />
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ScholarlyArticle",
-  "headline": "Title of my article",
-  "datePublished": "2026-04-18",
-  "description": "Lorem ipsum and so forth",
-  "url": "https://whsah.co/posts/title-of-my-article/",
-  "publisher": { "@type": "Organization", "name": "WHSAH" },
-  "author": [{"@type":"Person","name":"alix"}, {"@type":"Person","name":"my alter ego"}, {"@type":"Person","name":"the demon on my shoulder"}]
-}
-</script>
+  <meta property="og:type" content="website" />
 
 <title>Slightly different title</title>
 <style>
@@ -223,7 +196,8 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
             <li><a href="#but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography" id="toc-but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography"><span class="toc-section-number">4</span> “But alix”, I hear you say, “my post also uses many fancy citations so I need a bibliography”</a></li>
             <li><a href="#but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do" id="toc-but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="toc-section-number">5</span> “But aaliiiix”, I hear you whine, “my article uses fancy CSS with cool interactive buttons, what do?”</a></li>
             <li><a href="#i-dont-like-robots" id="toc-i-dont-like-robots"><span class="toc-section-number">6</span> “I don’t like robots”</a></li>
-            <li><a href="#housekeeping" id="toc-housekeeping"><span class="toc-section-number">7</span> Housekeeping</a></li>
+            <li><a href="#i-want-my-article-to-be-picked-up-by-scholar-engines" id="toc-i-want-my-article-to-be-picked-up-by-scholar-engines"><span class="toc-section-number">7</span> “I want my article to be picked up by scholar engines</a></li>
+            <li><a href="#housekeeping" id="toc-housekeeping"><span class="toc-section-number">8</span> Housekeeping</a></li>
             <li><a href="#bibliography" id="toc-bibliography">Bibliography</a></li>
             </ul>
             </nav>
@@ -240,21 +214,19 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">updated</span><span class="kw">:</span><span class="at"> 2026-03-03</span><span class="co"> # optional</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abstract</span><span class="kw">: </span><span class="ch">|</span><span class="co"> # optional, will be rendered at the top of the page just under the title</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  Lorem ipsum and so forth</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">note</span><span class="kw">: </span><span class="ch">|</span><span class="co"> # optional, html will be injected as-is after the title and abstract but before the ToC and the main text</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  &lt;h2&gt;Editor&#39;s Note&lt;/h2&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  &lt;p&gt;Here be dragons, &lt;a href=&quot;https://weather.com/retro/&quot;&gt;return to safety&lt;/a&gt;.&lt;/p&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">show-toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> # optional, defaults to false, render table of content,</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">number-sections</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> # optional, defaults to false, whether to number sections 1, 2, 3, subsections 1.1, 1.2, 2.1, does not go deeper than subsections</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">custom-css</span><span class="kw">:</span><span class="co"> # optional, for article-specific CSS and avoid polluting the common stylesheet /static/css/index.css</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> bespoke.css</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> pizzazz.css</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">custom-js</span><span class="kw">:</span><span class="co"> # optional, same concept as custom-css, but for scripts</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> magic.js</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> arcane.js</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">robots</span><span class="kw">:</span><span class="co"> # optional, include robots meta tags</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noindex</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noarchive</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">scholarly-meta</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co"> # optional, default to false, add Google scholar &quot;citation_*&quot; and DublinCore &quot;dcterms.*&quot; meta tags, as well as Schema.org metadata.</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">note</span><span class="kw">: </span><span class="ch">|</span><span class="co"> # optional, html will be injected as-is after the title and abstract but before the ToC and the main text</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  &lt;h2&gt;Editor&#39;s Note&lt;/h2&gt;</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  &lt;p&gt;Here be dragons, &lt;a href=&quot;https://weather.com/retro/&quot;&gt;return to safety&lt;/a&gt;.&lt;/p&gt;</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">show-toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> # optional, defaults to false, render table of content,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">number-sections</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> # optional, defaults to false, whether to number sections 1, 2, 3, subsections 1.1, 1.2, 2.1, does not go deeper than subsections</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">custom-css</span><span class="kw">:</span><span class="co"> # optional, for article-specific CSS and avoid polluting the common stylesheet /static/css/index.css</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> bespoke.css</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> pizzazz.css</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">custom-js</span><span class="kw">:</span><span class="co"> # optional, same concept as custom-css, but for scripts</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> magic.js</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> arcane.js</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
                 <h2 data-number="2" id="how-do-i-create-a-new-post"><span class="header-section-number">2</span> “How do I create a new post?”</h2>
                 <ul>
                 <li>Create a sub-folder in <code>./md/posts/</code> with a simple kebab-case name based on the title. For example for this template this would be <code>/md/posts/title-of-my-article/</code>. The name can/should be shortened if the title is too long.</li>
@@ -294,17 +266,27 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
                 <p>Make sure all your stylesheets and scripts are located in the static asset folder <code>/static/posts/title-of-my-article/</code>.</p>
                 <h2 data-number="6" id="i-dont-like-robots"><span class="header-section-number">6</span> “I don’t like robots”</h2>
                 <p>and that’s valid.</p>
-                <p>You can add meta tags kindly asking robots to do or not do certain things. No guarantee though, its barely more than a suggestion to them.</p>
-                <p>To do so, include the <code>robots</code> item in the YAML block and list tags of your choosing. Common ones are,</p>
+                <p>By default all pages are generated with <code>&lt;meta name="robots" content="noindex, nofollow, noarchive, nosnippet"&gt;</code> and you must explicitly set <code>allow-robots: true</code> to prevent its insertion in the header of your post. Meta tags kindly ask robots to do or not do certain things, but there is no guarantee they will listen, its barely more than a suggestion to them.</p>
+                <p>To do so, include the <code>robots:</code> item in the YAML block and list tags of your choosing. Common ones are,</p>
                 <ul>
-                <li><code>noindex</code>, instructs search engines not to index the page.</li>
-                <li><code>noimageindex</code>, instructs search engines not to index images on the page.</li>
-                <li><code>nofollow</code>, instructs search engines not to follow any links on the page.</li>
-                <li><code>noarchive</code>, prevents a cached copy of the page from being made, honored by archive.org (I think).</li>
-                <li><code>nosnippet</code>, prevents a description from being shown in the search results.</li>
+                <li><code>index</code>/<code>noindex</code>, instructs search engines not to index the page.</li>
+                <li><code>imageindex</code>/<code>noimageindex</code>, instructs search engines not to index images on the page.</li>
+                <li><code>follow</code>/<code>nofollow</code>, instructs search engines not to follow any links on the page.</li>
+                <li><code>archive</code>/<code>noarchive</code>, prevents a cached copy of the page from being made, honored by archive.org (I think).</li>
+                <li><code>snippet</code>/<code>nosnippet</code>, prevents a description from being shown in the search results.</li>
                 </ul>
+                <p>In other words, the default behavior is basically the equivalent of</p>
+                <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">allow-robots</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">robots</span><span class="kw">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noindex</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> nofollow</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noarchive</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> nosnippet</span></span></code></pre></div>
+                <p>with the only difference that in this case they will appear as three distinct <code>&lt;meta name="..." content="..."&gt;</code> elements rather than as a single one. You don’t <em>need</em> to set <code>allow-robots: true</code> in order to use <code>robots:</code>, both function independently.</p>
                 <p>For more <code>robots</code> tag options, see <a href="https://zhead.dev/meta/robots" class="uri">https://zhead.dev/meta/robots</a>.</p>
-                <h2 data-number="7" id="housekeeping"><span class="header-section-number">7</span> Housekeeping</h2>
+                <h2 data-number="7" id="i-want-my-article-to-be-picked-up-by-scholar-engines"><span class="header-section-number">7</span> “I want my article to be picked up by scholar engines</h2>
+                <p>Set <code>scholarly-meta: true</code>, pandoc will fill in Google Scholar’s <code>citation_*</code> tags, DublinCore <code>dcterms.*</code> tags (used by libraries/archives), as well as Schema.org metadata, with title, author, date, publisher, abstract, url, and article type.</p>
+                <h2 data-number="8" id="housekeeping"><span class="header-section-number">8</span> Housekeeping</h2>
                 <p>Once this is all done, make sure to</p>
                 <ul class="task-list">
                 <li><label><input type="checkbox" />Add link to the landing page <code>/md/index.md</code></label></li>
