@@ -218,7 +218,7 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
             <h2>Contents</h2>
             <ul>
             <li><a href="#yaml-header-format" id="toc-yaml-header-format"><span class="toc-section-number">1</span> YAML header format</a></li>
-            <li><a href="#how-to-create-a-new-post" id="toc-how-to-create-a-new-post"><span class="toc-section-number">2</span> How to create a new post</a></li>
+            <li><a href="#how-do-i-create-a-new-post" id="toc-how-do-i-create-a-new-post"><span class="toc-section-number">2</span> “How do I create a new post?”</a></li>
             <li><a href="#my-post-uses-images-and-other-somesuches-you-inquire" id="toc-my-post-uses-images-and-other-somesuches-you-inquire"><span class="toc-section-number">3</span> “My post uses images and other somesuches”, you inquire</a></li>
             <li><a href="#but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography" id="toc-but-alix-i-hear-you-say-my-post-also-uses-many-fancy-citations-so-i-need-a-bibliography"><span class="toc-section-number">4</span> “But alix”, I hear you say, “my post also uses many fancy citations so I need a bibliography”</a></li>
             <li><a href="#but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do" id="toc-but-aaliiiix-i-hear-you-whine-my-article-uses-fancy-css-with-cool-interactive-buttons-what-do"><span class="toc-section-number">5</span> “But aaliiiix”, I hear you whine, “my article uses fancy CSS with cool interactive buttons, what do?”</a></li>
@@ -255,12 +255,12 @@ Here be dragons, <a href="https://weather.com/retro/">return to safety</a>.
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noindex</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> noarchive</span></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
-                <h2 data-number="2" id="how-to-create-a-new-post"><span class="header-section-number">2</span> How to create a new post</h2>
+                <h2 data-number="2" id="how-do-i-create-a-new-post"><span class="header-section-number">2</span> “How do I create a new post?”</h2>
                 <ul>
                 <li>Create a sub-folder in <code>./md/posts/</code> with a simple kebab-case name based on the title. For example for this template this would be <code>/md/posts/title-of-my-article/</code>. The name can/should be shortened if the title is too long.</li>
-                <li>Create an <code>index.md</code> file inside the folder containing the above YAML block. You can find a version without comments (don’t leave any in the YAML block) in the source file <code>/md/posts/title-of-my-article/index.md</code>.</li>
-                <li>When you run the <code>build.sh</code> script calls the <code>/src/render.sh</code> script once for each subfolder of <code>/md/posts/</code>. Pandoc renders <code>index.md</code> into <code>index.html</code> and moves it to <code>/output/posts/title-of-my-article/index.html</code>.</li>
-                <li>Note that you can create additional subfolders with their own <code>index.md</code> if your post is split into more than more page, those will be rendered as well. The <code>build.sh</code> scripts simply recursively traverses all subfolder inside <code>/md/posts/</code> and calls <code>render.sh</code> on every <code>index.md</code> it encounters.</li>
+                <li>Create an <code>index.md</code> file inside the folder containing the above YAML block. You can find a version without comments in the source file of this post located at <code>/md/posts/title-of-my-article/index.md</code>.</li>
+                <li>When you run the <code>build.sh</code> at the root of this repository, the script recursively traverses <code>/md/posts/</code> and runs the <code>/src/render.sh</code> script once for each markdown file it encounters along the way. Pandoc will for example render <code>index.md</code> into <code>index.html</code> and then move it to <code>/output/posts/title-of-my-article/index.html</code>.</li>
+                <li>If your post is split into more than one page, note that you can create additional files and subfolders containing arbitrary markdown files, they will all be rendered individually.</li>
                 </ul>
                 <h2 data-number="3" id="my-post-uses-images-and-other-somesuches-you-inquire"><span class="header-section-number">3</span> “My post uses images and other somesuches”, you inquire</h2>
                 <p>Worry not,</p>
