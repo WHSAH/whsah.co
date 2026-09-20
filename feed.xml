@@ -4,7 +4,7 @@
 <title>WHSAH</title>
 <link href="https://whsah.co"/>
 <link href="https://whsah.co/feed.xml" rel="self" />
-<updated>2026-09-09T00:00:00Z</updated>
+<updated>2026-09-20T00:00:00Z</updated>
 <author>
 <name>WHSAH Editor</name>
 <email>whsah@proton.me</email>
@@ -12,6 +12,18 @@
 </author>
 <id>urn:uuid:cb525818-6706-4281-bc0e-e6c3e740f35e</id>
 <subtitle>WHSAH is a research outlet for trans people, by trans people.</subtitle>
+
+<entry>
+<id>urn:uuid:33b142ca-0608-47bd-91ec-21d06ed11d17</id>
+<link rel="alternate" href="https://whsah.co/posts/proposed-synthesis-and-characterization-protocol-for-ec508/"/>
+<title type="html">A Proposed Synthesis and Characterization Protocol for EC508, a Sulfonamide–Proline Estradiol Prodrug</title>
+<summary>EC508 (estradiol 17β-{1-[(4-sulfamoyl)benzoyl]-L-prolinate}) is an orally bioavailable estradiol prodrug developed by Evestra, Inc. and reported by Ahmed et al. in 2017. This paper describes a proposed five-step synthetic route to EC508 starting from 17β-estradiol via a 3-O-tert-butyldimethylsilyl protection, EDCI/DMAP-mediated Steglich esterification with N-Boc-L-proline, trifluoroacetic acid–mediated Boc deprotection, amide coupling with 4-sulfamoylbenzoic acid using DIC/HOBt/DIEA, and final p-toluenesulfonic acid–mediated removal of the silyl ether. This work is offered as a pre-registered protocol to support open-science reproduction of a pharmacologically interesting prodrug; no biological evaluation in humans is proposed.</summary>
+<published>2026-09-20T00:00:00Z</published>
+<updated>2026-09-20T00:00:00Z</updated>
+<author>
+<name>Emily</name>
+</author>
+</entry>
 
 <entry>
 <id>urn:uuid:35cc98fe-1e26-486e-90ec-cba5451ed46e</id>

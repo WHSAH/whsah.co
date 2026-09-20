@@ -302,7 +302,7 @@ img {
 @media (prefers-color-scheme: dark) {
   img {
     filter:
-      invert(1) hue-rotate(180deg) brightness(1.3);
+      invert(1) hue-rotate(180deg) brightness(1.3) contrast(0.8);
     mix-blend-mode: lighten
   }
 
