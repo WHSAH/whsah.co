@@ -17,10 +17,16 @@
 
 <title>WHSAH Collective</title>
 <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -61,9 +67,7 @@
         <header id="title-block-header">
                         <h1 class="title">WHSAH Collective</h1>
                                                                     </header>
-                        <p><strong>WHSAH</strong> is a global collective of trans people dedicated to furthering the science and healthcare relevant to trans people.
-                        In addition to this, we connect people doing liberatory harm reduction across the world, and give a voice to trans people and the DIY community in the diverse political and societal discourse surrounding the hard sciences.
-                        Indirectly, our work also benefits other groups which are commonly discriminated against and marginalized in society and the healthcare system.</p>
+                        <p><strong>WHSAH</strong> is a global trans collective dedicated to furthering the science and medicine of trans health, both within and outside of traditional academic spaces. We serve as a venue for fostering connections among trans people engaged in liberatory harm reduction around the world, amplifying both the needs and the knowledge of the DIY community in spaces of scientific discourse. We also work to improve the communication and practice of science within the trans community itself, allowing trans people to act as leaders and visionaries of our own healthcare. Indirectly, our work also serves to benefit other groups that are marginalized within the medical-industrial complex or who share healthcare needs with the trans community.</p>
                         <h2 id="projects">Projects</h2>
                         <ul>
                         <li><a href="https://estrannai.se" target="_blank">estrannai.se</a> | the estradiol pharmacokinetics playground | <a href="https://github.com/WHSAH/estrannaise.js" target="_blank">github.com</a></li>
