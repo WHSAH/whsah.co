@@ -1,0 +1,165 @@
+.citation-backlinks,
+.footnote-back {
+    display: none
+}
+
+.boba-cover {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 77%;
+}
+
+.boba-cover img {
+  display: block;
+  margin: auto;
+  width: 43%;
+}
+
+.large-font {
+    font-size: 21pt;
+}
+
+.small-font {
+    font-size: 12pt;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.right {
+    display: block;
+    text-align: right;
+}
+
+.left {
+    display: block;
+    text-align: left;
+}
+
+.row {
+  grid-column: 1 / -1;      /* span the whole page grid */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* align-items: flex-start; */
+  align-items: center;
+  margin: auto;
+}
+
+.row > img:not(.mark),
+.row > div,
+.row > .mark-host {
+  flex-grow: 0;
+  flex-shrink: 1; 
+  flex-basis: var(--img-w, 40%);
+  min-width: 0;
+  margin: 0;
+}
+
+.row > p {
+  flex: 1 1 12rem;
+  min-width: 0;
+  margin: 0;
+  position: relative;       /* lets z-index work against .mark */
+  z-index: 2;
+}
+
+.mark-host {
+    position: relative;
+    margin: 0;
+}
+
+.mark-host:not(.mark) {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin-inline: auto; 
+}
+
+/* .mark-host {
+  flex: 0 0 auto;
+  width: fit-content;
+  max-width: var(--img-w, 40%);
+} */
+
+.anchor-center       { --anchor-x: -50%; --anchor-y: -50%;  }
+.anchor-center-left  { --anchor-x: 0;    --anchor-y: -50%;  }
+.anchor-top-left     { --anchor-x: 0;    --anchor-y: 0;     }
+.anchor-top-right    { --anchor-x: -100%;--anchor-y: 0;     }
+.anchor-bottom-left  { --anchor-x: 0;    --anchor-y: -100%; }
+.anchor-bottom-right { --anchor-x: -100%;--anchor-y: -100%; }
+
+.anchor-small-center       { --anchor-x-small: -50%; --anchor-y-small: -50%;  }
+.anchor-small-center-left  { --anchor-x-small: 0;    --anchor-y-small: -50%;  }
+.anchor-small-center-right { --anchor-x-small: -100; --anchor-y-small: -50%;  }
+.anchor-small-top-left     { --anchor-x-small: 0;    --anchor-y-small: 0;     }
+.anchor-small-top-right    { --anchor-x-small: -100%;--anchor-y-small: 0;     }
+.anchor-small-bottom-left  { --anchor-x-small: 0;    --anchor-y-small: -100%; }
+.anchor-small-bottom-right { --anchor-x-small: -100%;--anchor-y-small: -100%; }
+
+.place-center       { --place-x: 50%;  --place-y: 50% }
+.place-center-left  { --place-x: 0;    --place-y: 50% }
+.place-top-left     { --place-x: 0;    --place-y: 0   }
+.place-top-right    { --place-x: 100%; --place-y: 0   }
+.place-bottom-left  { --place-x: 0;    --place-y: 100%}
+.place-bottom-right { --place-x: 100%; --place-y: 100%}
+
+.place-small-center       { --place-x-small: 50%;  --place-y-small: 50% }
+.place-small-center-left  { --place-x-small: 0;    --place-y-small: 50% }
+.place-small-top-left     { --place-x-small: 0;    --place-y-small: 0   }
+.place-small-top-right    { --place-x-small: 100%; --place-y-small: 0   }
+.place-small-bottom-left  { --place-x-small: 0;    --place-y-small: 100%}
+.place-small-bottom-right { --place-x-small: 100%; --place-y-small: 100%}
+
+.mark {
+  position: absolute;
+  left: var(--place-x, 50%);
+  top: var(--place-y, 50%);
+  transform: translate(var(--anchor-x, -50%), var(--anchor-y, -50%)) rotate(var(--mark-rot, 0deg));
+  width: var(--mark-w, 6rem);
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+}
+
+@media (max-width: 52rem) {
+  /* .page {
+    grid-template-columns: 1fr;
+  } */
+
+  .boba-cover img {
+    width: 62%;
+  }
+
+  .mark {
+    left: var(--place-x-small);
+    top: var(--place-y-small);
+    width: var(--mark-w-small, 4rem);
+    transform: translate(var(--anchor-x-small), var(--anchor-y-small)) rotate(var(--mark-rot, 0deg))
+  }
+
+  .large-font {
+    font-size: 18pt;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  
+  img:not(.invert-dark) {
+    filter: none !important;
+    mix-blend-mode: normal;
+  }
+  
+  img.boba-swap-dark {
+    content: url("boba-vial-dark.svg");
+  }
+
+  img.unit-swap-dark {
+    content: url("5-insulin-units-dark.png");
+  }
+}

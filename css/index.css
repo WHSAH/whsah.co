@@ -312,6 +312,13 @@ img {
     filter: none;
     mix-blend-mode: lighten;
   }
+
+  .no-invert img,
+  img.no-invert {
+    filter: none;
+    mix-blend-mode: normal;
+  }
+
 }
 
 @media (prefers-color-scheme: light) {
