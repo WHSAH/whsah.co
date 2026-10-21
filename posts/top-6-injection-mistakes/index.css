@@ -128,10 +128,6 @@
 }
 
 @media (max-width: 52rem) {
-  /* .page {
-    grid-template-columns: 1fr;
-  } */
-
   .boba-cover img {
     width: 62%;
   }
@@ -146,10 +142,13 @@
   .large-font {
     font-size: 18pt;
   }
+
+  .small-font {
+    font-size: 9pt;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  
   img:not(.invert-dark) {
     filter: none !important;
     mix-blend-mode: normal;
