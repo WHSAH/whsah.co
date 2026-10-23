@@ -70,6 +70,7 @@
 .mark-host {
     position: relative;
     margin: 0;
+    isolation: isolate;
 }
 
 .mark-host:not(.mark) {
@@ -78,12 +79,6 @@
   max-width: 100%;
   margin-inline: auto; 
 }
-
-/* .mark-host {
-  flex: 0 0 auto;
-  width: fit-content;
-  max-width: var(--img-w, 40%);
-} */
 
 .anchor-center       { --anchor-x: -50%; --anchor-y: -50%;  }
 .anchor-center-left  { --anchor-x: 0;    --anchor-y: -50%;  }
@@ -127,6 +122,11 @@
   filter: none !important;
 }
 
+.mark-bad-things-list {
+  opacity: 0.6;
+  z-index: -1;
+}
+
 @media (max-width: 52rem) {
   .boba-cover img {
     width: 62%;
@@ -145,20 +145,5 @@
 
   .small-font {
     font-size: 9pt;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  img:not(.invert-dark) {
-    filter: none !important;
-    mix-blend-mode: normal;
-  }
-  
-  img.boba-swap-dark {
-    content: url("boba-vial-dark.svg");
-  }
-
-  img.unit-swap-dark {
-    content: url("5-insulin-units-dark.png");
   }
 }

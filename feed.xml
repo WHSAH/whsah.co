@@ -14,12 +14,24 @@
 <subtitle>WHSAH is a research outlet for trans people, by trans people.</subtitle>
 
 <entry>
+<id>urn:uuid:4595b705-1d6e-4032-8004-800ac9ff8f9d</id>
+<link rel="alternate" href="https://whsah.co/posts/top-6-injection-mistakes/index-fr.html"/>
+<title type="html">Top 6 des erreurs d'injection</title>
+<summary>Traduction française par uriel de la zine "Top 6 Injection Mistakes" par Ari. (Première erreur) Mal ouvrir le haut de sa fiole (... ou ne pas l'ouvrir du tout). (Deuxième erreur) Désinfection improvisée de fiole. (Troisième erreur) Percer la fiole avec une aiguille-paille. (Quatrième erreur) Stériliser tes aiguilles stériles. (Cinquième erreur) Mal lire les graduations de ta seringue. (Sixième erreur) Jeter ta dose en changeant d'aiguille.</summary>
+<published>2026-10-23T00:00:00Z</published>
+<updated>2026-10-23T00:00:00Z</updated>
+<author>
+<name>Ari</name>
+</author>
+</entry>
+
+<entry>
 <id>urn:uuid:9dee277d-da78-4e98-9a99-e21b747a6498</id>
 <link rel="alternate" href="https://whsah.co/posts/top-6-injection-mistakes/"/>
 <title type="html">Top 6 Injection Mistakes</title>
 <summary>Top 6 Injection Mistakes (and how to avoid them). (1st mistake) Incorrectly opening the vial top (... or not!) (2nd mistake) Improvisational vial cleaning. (Infamous 3rd mistake) Piercing the vial with a boba straw needle. (4th mistake) Sterilizing your sterile needles. (5th mistake) Misreading the markings on your syringe barrel. (6th mistake) Tossing out your dose when swapping needles.</summary>
 <published>2026-10-21T00:00:00Z</published>
-<updated>2026-10-21T00:00:00Z</updated>
+<updated>2026-10-23T00:00:00Z</updated>
 <author>
 <name>Ari</name>
 </author>

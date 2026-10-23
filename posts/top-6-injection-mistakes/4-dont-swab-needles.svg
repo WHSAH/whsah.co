@@ -4,14 +4,17 @@
     <style>
       .cls-1 {
         fill: none;
-        opacity: .5;
+        opacity: 0.5;
         stroke: #D53E00;
         stroke-miterlimit: 10;
         stroke-width: 67px;
       }
 
-      .cls-2 {
-        opacity: .58;
+      @media (prefers-color-scheme: dark) {
+        .cls-1 {
+          stroke: #FF4400;
+          opacity: 0.7;
+        }
       }
     </style>
   </defs>

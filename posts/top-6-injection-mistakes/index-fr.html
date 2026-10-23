@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<meta name="robots" content="noindex" />
+  <meta name="robots" content="nofollow" />
+  <meta name="robots" content="noarchive" />
+  <meta name="robots" content="nosnippet" />
+  <meta name="author" content="Ari" />
+  <meta name="publisher" content="WHSAH" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta property="og:title" content="Top 6 des erreurs d’injection" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="WHSAH" />
+  <meta property="og:description" content="Top 6 des erreurs d’injection (et comment les éviter)" />
+  <meta property="og:url" content="https://whsah.co/posts/top-6-injection-mistakes/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://whsah.co/posts/top-6-injection-mistakes/top-6-injection-mistakes-1200x927.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="927" />
+
+<title>Top 6 des erreurs d’injection</title>
+<style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/latin-modern-sans" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="mode-sombre.css" />
+  <script type="module" src="/js/toc.js"></script>
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WHSAH Atom feed" />
+</head>
+<body>
+<div id="navigation-container">
+    <div id="navigation-options">
+        <div class="nav-option"><a href="/">Home</a></div>
+        <div class="nav-option"><a href="/about">About</a></div>
+        <div class="nav-option feed">
+            <a href="/feed.xml">Feed</a>
+        </div>
+    </div>
+</div>
+<script>
+    const navigationMenu = document.getElementById('navigation-menu');
+    document.addEventListener('mousedown', (e) => {
+        const isClickOnSummary = e.target.closest('summary') !== null;
+        if (navigationMenu?.open && !isClickOnSummary && !navigationMenu.contains(e.target)) {
+            navigationMenu.open = false;
+        }
+    });
+</script>
+<div class="grid-area">
+    <div class="content-area">
+        <header id="title-block-header">
+                        <h1 class="title">Top 6 des erreurs d’injection</h1>
+                                                    By <a href="/about/authors.html#Ari">Ari</a><br />
+                                        published 2026-10-23 
+                                </header>
+                    <div class="editors-box"><p>
+Traduction et adaptation aux ressources françaises par <a href="/about/authors.html#uriel">uriel</a>.
+</p>
+<p class="do-not-print">
+Version originale anglaise disponible ici: <a href="/posts/top-6-injection-mistakes">Top 6 Injection Mistakes</a>.
+</p></div>
+                            <nav id="TOC" role="doc-toc">
+            <h2>Contents</h2>
+            <ul>
+            <li><a href="#mal-ouvrir-le-haut-de-sa-fiole-ou-ne-pas-louvrir-du-tout" id="toc-mal-ouvrir-le-haut-de-sa-fiole-ou-ne-pas-louvrir-du-tout">Mal ouvrir le haut de sa fiole (… ou ne pas l’ouvrir du tout)</a></li>
+            <li><a href="#désinfection-improvisée-de-fiole" id="toc-désinfection-improvisée-de-fiole">Désinfection improvisée de fiole</a></li>
+            <li><a href="#percer-la-fiole-avec-une-aiguille-paille" id="toc-percer-la-fiole-avec-une-aiguille-paille">Percer la fiole avec une aiguille-paille</a></li>
+            <li><a href="#stériliser-tes-aiguilles-stériles" id="toc-stériliser-tes-aiguilles-stériles">Stériliser tes aiguilles stériles</a></li>
+            <li><a href="#mal-lire-les-graduations-de-ta-seringue" id="toc-mal-lire-les-graduations-de-ta-seringue">Mal lire les graduations de ta seringue</a></li>
+            <li><a href="#jeter-ta-dose-en-changeant-daiguille" id="toc-jeter-ta-dose-en-changeant-daiguille">Jeter ta dose en changeant d’aiguille</a></li>
+            <li><a href="#ressources" id="toc-ressources">Ressources</a>
+            <ul>
+            <li><a href="#acheter-du-matériel-dinjection" id="toc-acheter-du-matériel-dinjection">Acheter du matériel d’injection</a></li>
+            <li><a href="#guide-dauto-injection" id="toc-guide-dauto-injection">Guide d’auto-injection</a></li>
+            </ul></li>
+            </ul>
+            </nav>
+                <div class="do-not-print">
+                <p><span class="center">[<a href="top-6-injection-mistakes-foldable.pdf" target="_blank">PDF version pliable et imprimable (à venir)</a>][<a href="top-6-injection-mistakes-web.pdf" target="_blank">PDF version web (à venir)</a>]</span></p>
+                <hr />
+                </div>
+                <div class="boba-cover">
+                <h1>
+                <strong>Top 6 des erreurs d’injection</strong>
+                </h1>
+                <img src="boba-vial.svg" class="boba-swap-dark" alt="Gobelet de bubble tea avec une grande paille" />
+                <h1>
+                <em>(et comment les éviter)</em>
+                </h1>
+                <hr />
+                </div>
+                <h2 id="mal-ouvrir-le-haut-de-sa-fiole-ou-ne-pas-louvrir-du-tout">Mal ouvrir le haut de sa fiole (… ou ne pas l’ouvrir du tout)</h2>
+                <div class="row">
+                <p><span class="large-font">Si ta fiole a un petit disque en métal recouvrant l’opercule, il faut l’enlever avant de prélever…</span></p>
+                <div class="mark-host" style="--img-w: 12rem">
+                <p><img src="1-punctured-vial-cap.png" style="border-radius: 7px;" alt="Photo de l&#39;opercule d&#39;une fiole avec un trou à travers le couvercle en métal. Un X rouge apposé sur le côté." />
+                <img src="red-x.svg" class="mark anchor-center anchor-small-top-right place-top-right place-small-top-right" alt="" /></p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="mark-host" style="--img-w: 12rem">
+                <p><img src="1-vial-with-peeled-stopper.png" style="border-radius: 7px;" alt="Photo d&#39;une fiole avec le cerclage en métal pelé/arraché sur le côté, exposant l&#39;opercule en caoutchouc en dessous.Un X rouge apposé sur le côté." />
+                <img src="red-x.svg" class="mark anchor-center anchor-small-top-left place-top-left place-small-top-left" alt="" /></p>
+                </div>
+                <p><span class="large-font">Mais n’enlève pas tout le cerclage en métal qui maintient l’opercule en place !</span></p>
+                </div>
+                <div class="full">
+                <p><span class="large-font center"><em>Comment exposer l’opercule correctement :</em></span></p>
+                <div class="mark-host">
+                <p><img src="1-vial-cap-removal.jpg" style="border-radius: 7px;" alt="Quatre photos d&#39;une fiole montrant en 4 étapes comment enlever correctement et avec délicatesse le couvercle métallique sans abîmer l&#39;opercule. Un V vert apposé sur le côté." />
+                <img src="green-checkmark.svg" class="mark anchor-center place-top-left place-small-top-left" style="--anchor-x-small: 0; --anchor-y-small: -30%" alt="" /></p>
+                </div>
+                </div>
+                <hr />
+                <h2 id="désinfection-improvisée-de-fiole">Désinfection improvisée de fiole</h2>
+                <div class="row">
+                <div>
+                <p><span class="large-font">N’essaie pas de désinfecter ta fiole avec :</span></p>
+                <div class="mark-host" style="align-items: right;">
+                <ul>
+                <li><span class="large-font">du gel hydroalcoolique</span></li>
+                <li><span class="large-font">de la javel</span></li>
+                <li><span class="large-font">de la biseptine</span></li>
+                <li><span class="large-font">de l’eau</span></li>
+                <li><span class="large-font">de l’alcool à 100%</span></li>
+                </ul>
+                <p><img src="red-x.svg" class="mark mark-bad-things-list anchor-center-left anchor-small-center-left" style="--mark-w: 14rem; --mark-w-small: 11rem; --place-x: 0.5rem; --place-y: 50%; --place-x-small: 0.5rem; --place-y-small: 50%;" alt="" /></p>
+                </div>
+                <p><span class="large-font">ou n’importe quoi qui n’est pas…</span></p>
+                </div>
+                <div class="mark-host" style="--img-w: 40%; justify-items: center">
+                <p><img src="2-bad-things-to-swab-with.svg" alt="" /></p>
+                </div>
+                </div>
+                <div class="full">
+                <p><span class="large-font center"><strong><em>des tampons d’éthanol ou d’alcool isopropylique à 70% !</em></strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></span></p>
+                </div>
+                <div class="row">
+                <p><img src="2-alcohol-prep-pads.png" alt="" /></p>
+                <div class="mark-host" style="--img-w: 50%">
+                <p><img src="2-hand-wiping-vial-top.svg" alt="" />
+                <img src="green-checkmark.svg" class="mark anchor-bottom-right place-bottom-right anchor-small-bottom-right place-small-bottom-right" style="--mark-w: 6rem; --mark-w-small: 5rem;" alt="" /></p>
+                </div>
+                </div>
+                <div class="full">
+                <p><span class="large-font">Si tu n’en a plus, il vaut mieux sauter la désinfection de ta fiole cette fois-ci.</span></p>
+                </div>
+                <hr />
+                <h2 id="percer-la-fiole-avec-une-aiguille-paille">Percer la fiole avec une aiguille-paille</h2>
+                <div class="full">
+                <p><span class="large-font">Bien que certains guides le recommandent, <strong>n’utilise pas d’aiguille 18G</strong> pour prélever dans ta fiole.</span></p>
+                </div>
+                <div class="row">
+                <div class="mark-host" style="--img-w: 6rem; padding-left: 1rem; padding-right: 1rem;">
+                <p><img src="boba-vial.svg" class="boba-swap-dark" style="transform: rotate(30deg);" alt="Gobelet de bubble tea avec une grosse paille large" />
+                <img src="red-x.svg" class="mark anchor-top-left anchor-small-top-left place-top-left place-small-top-left" style="--mark-w: 4rem; --mark-rot: -15deg" alt="" /></p>
+                </div>
+                <p><span class="large-font">Ces recommendations proviennent originellement de recherche dans un cadre hospitalier, où les pro de santé donnent plusieurs injections par jour à différent·es patient·es.</span></p>
+                </div>
+                <div class="full">
+                <p><span class="large-font">Dans ce contexte, les fioles de médicaments se vident très vite et il est logique d’utiliser des grosses aiguilles pour prioriser la vitesse de prélèvement. Mais pour les personnes trans qui utilisent une même fiole sur plusieurs mois voire années, il nous faut prendre plus soin des opercules de nos fioles ! Une opercule abîmée compromet la stérilité de ta fiole.</span></p>
+                </div>
+                <div class="row">
+                <p><span class="large-font right">Des études sur combien de prélèvements peut résister une fiole montrent que des aiguilles de 23G ou plus causent moins de dégâts que des aiguilles plus grosses.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></span></p>
+                <div class="mark-host" style="--img-w: 15rem">
+                <p><img src="3-23g-needle-box.png" alt="" />
+                <img src="green-checkmark.svg" class="mark anchor-center anchor-small-top-right place-top-right place-small-top-right" style="--mark-w-small: 5rem; --anchor-x-small: -100%; --anchor-y-small: -30%" alt="" /></p>
+                </div>
+                </div>
+                <div class="full">
+                <p><span class="large-font center"><em>Rappel : gauge plus grande (G) = aiguille plus fine !</em></span></p>
+                </div>
+                <hr />
+                <h2 id="stériliser-tes-aiguilles-stériles">Stériliser tes aiguilles stériles</h2>
+                <div class="full">
+                <p><span class="large-font center">Oui, Trace Lysette l’a fait dans le film <em>Monica.</em></span></p>
+                <p><span class="large-font center">C’est pas une bonne idée pour autant !</span></p>
+                <p><span class="large-font center"><strong>Les aiguilles sont stériles à l’ouverture de l’emballage.</strong></span></p>
+                <p><span class="large-font center">Tant que l’emballage n’est pas abîmé, tu peux l’utiliser dès que tu l’ouvres ! Essayer de laver l’aiguille avec quoi que ce soit ne fait qu’introduire des potentiels contaminants dans ta fiole et dans ton corps.</span></p>
+                </div>
+                <div class="row">
+                <p><img src="4-wrapped-needles.svg" alt="" /></p>
+                <div style="--img-w: 40%">
+                <p><img src="4-dont-swab-needles.svg" alt="Une main essuyant une aiguille stérile avec un tampon d&#39;alcool. Un signe interdit superposé sur l&#39;illustration." /></p>
+                </div>
+                </div>
+                <div class="row">
+                <p><span class="large-font">Pour les seringues à insuline qui sont emballées à plusieurs dans un sachet, un capuchon orange couvre l’aiguille et le piston. C’est ça qui les garde stérile !</span></p>
+                <div style="--img-w: 40%">
+                <p><img src="4-easytouch-needles.png" alt="" /></p>
+                </div>
+                </div>
+                <hr />
+                <h2 id="mal-lire-les-graduations-de-ta-seringue">Mal lire les graduations de ta seringue</h2>
+                <div class="row">
+                <p><span class="large-font center">Fais attention à bien lire les unités sur ta seringue. La dose se mesure depuis le haut du piston.</span></p>
+                <div style="--img-w: 50%">
+                <p><img src="5-anatomie-dune-seringue.png" class="anatomie-mode-sombre" alt="Illustration d&#39;une seringue Luer 1mL. Le volume total sur le corps de la seringue, les graduations et le piston sont légendés avec des flèches." /></p>
+                </div>
+                </div>
+                <div class="row">
+                <div style="--img-w: 50%">
+                <p><img src="5-comment-lire-une-seringue.png" class="comment-lire-mode-sombre" style="border-radius: 7px;" alt="Vue rapprochée du corps d&#39;une seringue, remplie partiellement d&#39;huile. Le piston est entre les 12ème et 13ème graduations, indiquant que la seringue est remplie de 0.125mL d&#39;huile." /></p>
+                </div>
+                <p><span class="large-font center">0.1mL est une petite quantité de liquide dans la plupart des seringues. Ne te donne pas 10 fois ta dose par erreur !</span></p>
+                </div>
+                <div class="row">
+                <p><span class="large-font center">Pour les personnes qui injectent 0.1mL ou moins, les seringues à insuline existent en format 0.5 et 0.3mL et peuvent s’utiliser pour des injections sous-cutanées. C’est plus simple et plus précis d’utiliser ces petites seringues pour des petites doses.</span></p>
+                <div style="--img-w: 50%">
+                <p><img src="5-unites-insuline.png" class="unites-mode-sombre" alt="Une seringue à insuline. Une flèche montre où est inscrit le type d&#39;unité sur le corps de la seringue, ici U-100, indiquant que chaque graduation équivaut à 1mL divisé par 100 soit 0.01mL. Une autre flèche vers la graduation 20 indique que tirer le piston jusque là permet de prélèvement 20 fois 0.01mL soit 0.2mL." /></p>
+                </div>
+                </div>
+                <div class="full">
+                <p><span class="large-font center">Les graduations des seringues à insuline correspondent à des <strong>unités</strong>.</span></p>
+                <p><span class="large-font center"><strong>1mL = le chiffre U de la seringue</strong>.</span></p>
+                <p><span class="large-font left">Par exemple :</span></p>
+                <p><span class="large-font center">Sur une seringue U-100, 100 unités = 1mL donc 10 unités = 0.1mL</span></p>
+                <p><span class="large-font center">Sur une seringue U-40, 40 unités = 1mL donc 10 unités = 0.25mL</span></p>
+                </div>
+                <hr />
+                <h2 id="jeter-ta-dose-en-changeant-daiguille">Jeter ta dose en changeant d’aiguille</h2>
+                <div class="full">
+                <p><span class="large-font center">Les aiguilles détachables et les seringues ont toujours un espace que le piston ne peut pas entièrement vider, qu’on appelle l’<strong>espace mort</strong>.</span></p>
+                </div>
+                <div class="full">
+                <p><img src="6-diagrame-espace-mort.png" style="border-radius: 10px;;width:75.0%" alt="Illustration montrant quatre type de seringues et d&#39;aiguille. 1 : seringue standard avec aiguille standard détachable, espace mort important (typiquement 92 µL). 2 : seringue modifiée avec aiguille standard détachable, piston fin s&#39;étirant jusque dans la base de l&#39;aiguille, espace mort réduit (typiquement 59 µL). 3 : seringue standard avec aiguille à faible espace mort, la base de l&#39;aiguille est fine et s&#39;étend dans la base de la seringue, espace mort plus faible (aussi peu que 17 µL). 4 : seringue à insuline à faible espace mort avec aiguille sertie, espace mort très faible (typiquement 3 µL)" />
+                <span class="small-font center"><em>Attributions: <a href="https://www.exchangesupplies.org/product/low_dead_space_briefing">exchangesupplies.org Low Dead Space Injecting Equipment: A Briefing</a></em></br>(traduction française en interne)</span></p>
+                </div>
+                <div class="full">
+                <p><span class="large-font center">Quand tu changes d’aiguille, pense bien à prélever un peu d’air avant d’enlever ton aiguille de prélèvement pour ne pas perdre ta dose à l’espace mort ! On peut utiliser de l’air pour vider l’espace mort avant d’injecter avec la technique de l’air-lock.</span></p>
+                </div>
+                <h2 id="ressources">Ressources</h2>
+                <h3 id="acheter-du-matériel-dinjection">Acheter du matériel d’injection</h3>
+                <ul>
+                <li>Infos pour la France : <a href="https://partagenre.fransgenre.fr/ressources/materiel-injection-diy" target="_blank" rel="noreferrer">matériel d’injection et DIY | partagenre</a></li>
+                <li>Site français <a href="www.robe-materiel-medical.com" target="_blank" rel="noreferrer">Robé Médical</a></li>
+                <li>Infos internationales : <a href="https://www.reddit.com/r/TransWiki/wiki/hrt/injections/#wiki_buying_syringes_and_needles" target="_blank" rel="noreferrer">reddit TransWiki</a></li>
+                <li>Site canadien : <a href="https://medneedles.ca/" target="_blank" rel="noreferrer">Med Needles</a></li>
+                </ul>
+                <h3 id="guide-dauto-injection">Guide d’auto-injection</h3>
+                <ul>
+                <li><a href="https://partagenre.fransgenre.fr/ressources/guide-auto-injection-oestrogenes-flirt" target="_blank" rel="noreferrer">Guide d’auto-injection du FLIRT</a>*</li>
+                </ul>
+                <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+                <hr />
+                <ol>
+                <li id="fn1"><p><a href="https://web.archive.org/web/20260218173156/https://foodmicrobe-basic.com/ethanol-sterilization-and-its-mechanism/">Why 70% Ethanol is the Star of Sterilization: Mechanisms and Limitations</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+                <li id="fn2"><p>Ponto, J. A. (2013). Self-sealing capacity of vial stoppers after multiple needle punctures. Journal of the American Pharmacists Association: JAPhA, 53(1), 58–60. <a href="https://doi.org/10.1331/JAPhA.2013.12064" target="_blank" rel="noreferrer">https://doi.org/10.1331/JAPhA.2013.12064</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+                </ol>
+                </section>
+    </div>
+    </div>
+</body>
+</html>

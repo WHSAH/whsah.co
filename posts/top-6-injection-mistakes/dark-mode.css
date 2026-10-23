@@ -1,0 +1,26 @@
+@media (prefers-color-scheme: dark) {
+  img:not(.invert-dark) {
+    filter: none !important;
+    mix-blend-mode: normal;
+  }
+
+  img.boba-swap-dark {
+    content: url("boba-vial-dark.svg");
+  }
+
+  img.read-syringe-swap-dark {
+    content: url("5-how-to-read-a-syringe-dark.png");
+  }
+
+  img.anatomy-swap-dark {
+    content: url("5-anatomy-of-a-syringe-dark.png");
+  }
+  img.anatomy-swap-dark {
+    content: url("5-anatomy-of-a-syringe-dark.png");
+  }
+
+  img.units-swap-dark {
+    content: url("5-insulin-units-dark.png");
+  }
+
+}

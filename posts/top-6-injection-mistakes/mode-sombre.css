@@ -1,0 +1,22 @@
+@media (prefers-color-scheme: dark) {
+  img:not(.invert-dark) {
+    filter: none !important;
+    mix-blend-mode: normal;
+  }
+
+  img.boba-swap-dark {
+    content: url("boba-vial-dark.svg");
+  }
+
+  img.comment-lire-mode-sombre {
+    content: url("5-comment-lire-une-seringue-sombre.png");
+  }
+
+  img.anatomie-mode-sombre {
+    content: url("5-anatomie-dune-seringue-sombre.png");
+  }
+
+  img.unites-mode-sombre {
+    content: url("5-unites-insuline-sombre.png");
+  }
+}
