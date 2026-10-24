@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Computer Modern";
+    src: url("/fonts/CMRegular.otf");
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url("/fonts/CMBold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url("/fonts/CMItalic.otf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url("/fonts/CMBoldItalic.otf");
+    font-weight: bold;
+    font-style: italic;
+}
+
 :root {
   --background-interact-color: color-mix(in srgb, Canvas, LinkText 10%);
 }
@@ -13,7 +34,7 @@ html {
 }
 
 body {
-  font-family: 'LMSans10', sans-serif;
+  font-family: 'LMSans10', 'Computer Modern', sans-serif;
   line-height: 1.7;
   background: Canvas;
   margin: 0;
@@ -296,8 +317,8 @@ p {
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
   margin: auto;
 }
 
